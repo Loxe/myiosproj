@@ -1,0 +1,15 @@
+//
+//  DocPreviewController.h
+//  akucun
+//
+//  Created by Jarry on 2017/5/12.
+//  Copyright © 2017年 Sucang. All rights reserved.
+//
+
+#import "BaseViewController.h"
+
+@interface DocPreviewController : BaseViewController
+
+@property (nonatomic, copy) NSString *url;
+
+@end
