@@ -23,6 +23,7 @@
 
 @property (nonatomic, strong) UIButton *commentButton;
 @property (nonatomic, strong) UIButton *shareButton;
+@property (nonatomic, strong) UIButton *saveButton;
 
 @property (nonatomic, strong) UIButton *playButton;
 
@@ -85,6 +86,7 @@
     
     [self.contentView addSubview:self.commentButton];
     [self.contentView addSubview:self.shareButton];
+    [self.contentView addSubview:self.saveButton];
     [self.contentView addSubview:self.playButton];
     [self.contentView addSubview:self.topLabel];
 }
@@ -114,9 +116,14 @@
     self.commentButton.hidden = NO;
 
     self.playButton.hidden = YES;
+    self.saveButton.hidden = YES;
     if (cellLayout.dataModel.type == DISCOVER_TYPE_VIDEO) {
         self.playButton.frame = CGRectFromString(imagePostions[0]);
         self.playButton.hidden = NO;
+        
+        self.saveButton.centerY = self.shareButton.centerY;
+        self.saveButton.right = self.commentButton.left - kOFFSET_SIZE*0.5;
+        self.saveButton.hidden = NO;
     }
     
     self.topLabel.left = kOFFSET_SIZE*1.2;
@@ -165,6 +172,14 @@
     DiscoverCellLayout *layout = (DiscoverCellLayout *)self.cellLayout;
     if (self.clickedForwardCallback) {
         self.clickedForwardCallback(self, layout.dataModel);
+    }
+}
+
+- (IBAction) saveAction:(id)sender
+{
+    DiscoverCellLayout *layout = (DiscoverCellLayout *)self.cellLayout;
+    if (self.clickedSaveCallback) {
+        self.clickedSaveCallback(self, layout.dataModel);
     }
 }
 
@@ -311,6 +326,29 @@
     _shareButton.hidden = YES;
     
     return _shareButton;
+}
+
+- (UIButton *) saveButton
+{
+    if (_saveButton) {
+        return _saveButton;
+    }
+    _saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _saveButton.frame = CGRectMake(0, 0, 80, 22);
+    
+    _saveButton.backgroundColor = COLOR_BG_BUTTON;
+    _saveButton.layer.masksToBounds = NO;
+    _saveButton.layer.cornerRadius = 3.0f;
+    _saveButton.titleLabel.font = [FontUtils smallFont];
+    [_saveButton setNormalTitle:@"保存到相册"];
+    [_saveButton setNormalColor:WHITE_COLOR highlighted:COLOR_TEXT_LIGHT selected:nil];
+    
+    [_saveButton addTarget:self action:@selector(saveAction:)
+           forControlEvents:UIControlEventTouchUpInside];
+    
+    _saveButton.hidden = YES;
+    
+    return _saveButton;
 }
 
 - (UIButton *) playButton

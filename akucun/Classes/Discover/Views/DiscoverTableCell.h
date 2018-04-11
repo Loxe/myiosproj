@@ -21,6 +21,8 @@
 
 @property (nonatomic,copy) void(^clickedForwardCallback)(DiscoverTableCell* cell, DiscoverData *model);
 
+@property (nonatomic,copy) void(^clickedSaveCallback)(DiscoverTableCell* cell, DiscoverData *model);
+
 @property (nonatomic,copy) void(^clickedOpenCallback)(DiscoverTableCell* cell, DiscoverData *model, BOOL open);
 
 @end

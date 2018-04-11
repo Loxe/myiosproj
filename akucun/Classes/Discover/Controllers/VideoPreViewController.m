@@ -420,7 +420,7 @@
              [SVProgressHUD showErrorWithStatus:@"保存视频到相册失败"];
          }
          else {
-             [SVProgressHUD showSuccessWithStatus:@"视频已保存至相册"];
+             [SVProgressHUD showSuccessWithStatus:@"视频已保存至相册 !"];
          }
      }];
 }

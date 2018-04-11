@@ -41,10 +41,10 @@
                 continue;
             }
             
-//            if (index == 0) {
-//                item.isTop = YES;
-//                item.memberLevels = 3;
-//            }
+            if (index == 0) {
+                item.isTop = YES;
+                item.memberLevels = 3;
+            }
             if (item.isTop) {   // 置顶的
                 [liveInfos insertObject:item atIndex:0];
             }

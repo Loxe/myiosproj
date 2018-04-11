@@ -41,6 +41,7 @@
 @property (nonatomic, strong) AliyunVodPlayer     *aliplayer;
 
 @property (nonatomic, copy) NSString *videoPath;
+@property (nonatomic, assign) BOOL isForward;
 
 @end
 
@@ -363,7 +364,7 @@
         }
         else {
             INFOLOG(@"==> assetURL : %@", assetURL.absoluteString);
-            GCD_DELAY(^{
+            if (self.isForward) {
                 [ShareActivity forwardVideo:assetURL parent:self view:nil finished:^(int flag) {
                     //
                     [SVProgressHUD showSuccessWithStatus:@"分享成功 ！"];
@@ -374,7 +375,15 @@
                     }
                     
                 } canceled:nil];
-            }, .5f)
+            }
+            else {
+                [SVProgressHUD showSuccessWithStatus:@"视频已保存至相册 ！"];
+                // 删除临时文件
+                if ([[NSFileManager defaultManager] fileExistsAtPath:self.videoPath]) {
+                    BOOL success = [[NSFileManager defaultManager] removeItemAtPath:self.videoPath error:nil];
+                    DEBUGLOG(@"delete file : %d [%@]", success, self.videoPath);
+                }
+            }
         }
     }];
 }
@@ -445,6 +454,7 @@
     cell.clickedForwardCallback = ^(DiscoverTableCell* cell, DiscoverData *model) {
         @strongify(self)
         [self.commentView hide];
+        self.isForward = YES;
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         NSString *content = FORMAT(@"%@\n%@", model.title, model.content);
         pasteboard.string = content;
@@ -472,7 +482,14 @@
         }
     };
     
-    //__block DiscoverTableCell *weakCell = cell;
+    cell.clickedSaveCallback = ^(DiscoverTableCell* cell, DiscoverData *model) {
+        @strongify(self)
+        [self.commentView hide];
+        self.isForward = NO;
+        [SVProgressHUD showWithStatus:@"视频下载中，请稍候..."];
+        [self requestVideoInfo:model.videoId];
+    };
+    
     cell.clickedOpenCallback = ^(DiscoverTableCell *cell, DiscoverData *model, BOOL open) {
         @strongify(self)
         self.isOpened = open;
