@@ -17,7 +17,7 @@
 @property (nonatomic, assign) NSTimeInterval tradeTime;   //支付/退款时间
 
 @property (nonatomic, assign) NSInteger amount;      //支付/退款金额
-@property (nonatomic, assign) NSInteger tradeType;   //0:支付/1:退款
+@property (nonatomic, assign) NSInteger tradeType;   //0:支付 1:退款 2:余额充值
 @property (nonatomic, assign) NSInteger tradeStatus; //订单状态 1.成功 2.失败 3.处理中 目前默认为0
 
 - (NSString *) displayTradeId;

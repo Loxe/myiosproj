@@ -661,9 +661,6 @@
 		44458C9D1EF90FCC004C6C80 /* AKCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C821EF90FCC004C6C80 /* AKCellLayout.m */; };
 		44458C9F1EF90FCC004C6C80 /* AKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C841EF90FCC004C6C80 /* AKTableViewCell.m */; };
 		44458CA51EF90FCC004C6C80 /* MyOrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C8A1EF90FCC004C6C80 /* MyOrderTableCell.m */; };
-		44458CA71EF90FCC004C6C80 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C8C1EF90FCC004C6C80 /* OrderCellLayout.m */; };
-		44458CA91EF90FCC004C6C80 /* OrderDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C8E1EF90FCC004C6C80 /* OrderDetailTableCell.m */; };
-		44458CAB1EF90FCC004C6C80 /* OrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C901EF90FCC004C6C80 /* OrderTableCell.m */; };
 		44458CAD1EF90FCC004C6C80 /* PaystyleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C921EF90FCC004C6C80 /* PaystyleTableCell.m */; };
 		44458CB51EF90FCC004C6C80 /* YugaoCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C9A1EF90FCC004C6C80 /* YugaoCellLayout.m */; };
 		44458CB71EF90FCC004C6C80 /* YugaoTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C9C1EF90FCC004C6C80 /* YugaoTableCell.m */; };
@@ -768,7 +765,6 @@
 		445A5F121F1B3E4000E5E5E6 /* RequestMsgReadAll.m in Sources */ = {isa = PBXBuildFile; fileRef = 445AA0A51F07B6AD0083B7BB /* RequestMsgReadAll.m */; };
 		445A5F131F1B3E4000E5E5E6 /* LWTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D4F22F1E8D052700C34942 /* LWTextStorage.m */; };
 		445A5F151F1B3E4000E5E5E6 /* RequestBindPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 440F99651F17C06A003DC3DA /* RequestBindPhone.m */; };
-		445A5F161F1B3E4000E5E5E6 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C8C1EF90FCC004C6C80 /* OrderCellLayout.m */; };
 		445A5F171F1B3E4000E5E5E6 /* TextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABBD411E7E6E8D004555A1 /* TextButton.m */; };
 		445A5F191F1B3E4000E5E5E6 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 44141D691EADE70300B84321 /* UIImage+ImageEffects.m */; };
 		445A5F1A1F1B3E4000E5E5E6 /* RequestOrderList.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE5AE1E97DDB80037A28D /* RequestOrderList.m */; };
@@ -823,7 +819,6 @@
 		445A5F571F1B3E4000E5E5E6 /* RequestOrderDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE5D21E98AEE60037A28D /* RequestOrderDetail.m */; };
 		445A5F581F1B3E4000E5E5E6 /* CALayer+LWTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D4F1EF1E8D052700C34942 /* CALayer+LWTransaction.m */; };
 		445A5F591F1B3E4000E5E5E6 /* LWTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D4F22B1E8D052700C34942 /* LWTextParser.m */; };
-		445A5F5A1F1B3E4000E5E5E6 /* OrderDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C8E1EF90FCC004C6C80 /* OrderDetailTableCell.m */; };
 		445A5F5B1F1B3E4000E5E5E6 /* GrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE5EE1E9A084B0037A28D /* GrowingTextView.m */; };
 		445A5F5D1F1B3E4000E5E5E6 /* LWImageStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D4F2191E8D052700C34942 /* LWImageStorage.m */; };
 		445A5F5F1F1B3E4000E5E5E6 /* TableCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D4F1EB1E8CF81900C34942 /* TableCellBase.m */; };
@@ -872,7 +867,6 @@
 		445A5F911F1B3E4000E5E5E6 /* ResponseUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458CD71EFA6B69004C6C80 /* ResponseUserAccount.m */; };
 		445A5F921F1B3E4000E5E5E6 /* ECTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440A6E031E815B620083C675 /* ECTabBarController.m */; };
 		445A5F931F1B3E4000E5E5E6 /* ResponseForwardList.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE5B71E97ED600037A28D /* ResponseForwardList.m */; };
-		445A5F941F1B3E4000E5E5E6 /* OrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C901EF90FCC004C6C80 /* OrderTableCell.m */; };
 		445A5F951F1B3E4000E5E5E6 /* MMPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 441566171F03FD3F000336FC /* MMPopupWindow.m */; };
 		445A5F961F1B3E4000E5E5E6 /* LWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44141D581EADE70300B84321 /* LWAlertView.m */; };
 		445A5F971F1B3E4000E5E5E6 /* SDWebImageManager+Gallop.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D4F23D1E8D052700C34942 /* SDWebImageManager+Gallop.m */; };
@@ -1084,6 +1078,15 @@
 		69169DA989E6D130B6BBFE98 /* Pods_akTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BC76643AF72E000F156990 /* Pods_akTest.framework */; };
 		7602A62E202AEC1E0039B12F /* RequestUserActive.m in Sources */ = {isa = PBXBuildFile; fileRef = 7602A62D202AEC1E0039B12F /* RequestUserActive.m */; };
 		7602A62F202AEC1E0039B12F /* RequestUserActive.m in Sources */ = {isa = PBXBuildFile; fileRef = 7602A62D202AEC1E0039B12F /* RequestUserActive.m */; };
+		76419129207DEDE8006385D5 /* OrderDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419124207DEDE7006385D5 /* OrderDetailTableCell.m */; };
+		7641912A207DEDE8006385D5 /* OrderDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419124207DEDE7006385D5 /* OrderDetailTableCell.m */; };
+		7641912B207DEDE8006385D5 /* OrderDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419124207DEDE7006385D5 /* OrderDetailTableCell.m */; };
+		7641912C207DEDE8006385D5 /* OrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419126207DEDE8006385D5 /* OrderTableCell.m */; };
+		7641912D207DEDE8006385D5 /* OrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419126207DEDE8006385D5 /* OrderTableCell.m */; };
+		7641912E207DEDE8006385D5 /* OrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419126207DEDE8006385D5 /* OrderTableCell.m */; };
+		7641912F207DEDE8006385D5 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419127207DEDE8006385D5 /* OrderCellLayout.m */; };
+		76419130207DEDE8006385D5 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419127207DEDE8006385D5 /* OrderCellLayout.m */; };
+		76419131207DEDE8006385D5 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419127207DEDE8006385D5 /* OrderCellLayout.m */; };
 		7650C1AB1FFE89020032D657 /* RequestLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */; };
 		7650C1AC1FFE89020032D657 /* RequestLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */; };
 		7650C1AF1FFE89E80032D657 /* ResponseLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AE1FFE89E80032D657 /* ResponseLiveProducts.m */; };
@@ -1848,7 +1851,6 @@
 		76CDAD76204001DA008CD198 /* IPadAVCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE5D4202302C3006009CE /* IPadAVCaptureController.m */; };
 		76CDAD77204001DA008CD198 /* EBBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED237E31FFFAD6200E21A9B /* EBBannerViewController.m */; };
 		76CDAD78204001DA008CD198 /* SGQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E19914C2029759100FB8045 /* SGQRCodeScanManager.m */; };
-		76CDAD79204001DA008CD198 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C8C1EF90FCC004C6C80 /* OrderCellLayout.m */; };
 		76CDAD7B204001DA008CD198 /* RequestTrackSku.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B807642003166C00402279 /* RequestTrackSku.m */; };
 		76CDAD7C204001DA008CD198 /* JXLocalizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2A9E01FFCD2FC00C4B26B /* JXLocalizeHelper.m */; };
 		76CDAD7D204001DA008CD198 /* TextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ABBD411E7E6E8D004555A1 /* TextButton.m */; };
@@ -2006,7 +2008,6 @@
 		76CDAE33204001DA008CD198 /* RequestAftersaleTuihuo.m in Sources */ = {isa = PBXBuildFile; fileRef = 444899431F690DC000FD39C7 /* RequestAftersaleTuihuo.m */; };
 		76CDAE34204001DA008CD198 /* InvitedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 448270471FA0D44700246CA0 /* InvitedUser.m */; };
 		76CDAE36204001DA008CD198 /* JXBubbleView+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2AA081FFCD2FC00C4B26B /* JXBubbleView+Video.m */; };
-		76CDAE37204001DA008CD198 /* OrderDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C8E1EF90FCC004C6C80 /* OrderDetailTableCell.m */; };
 		76CDAE38204001DA008CD198 /* GrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE5EE1E9A084B0037A28D /* GrowingTextView.m */; };
 		76CDAE39204001DA008CD198 /* JXMcsChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2A9CA1FFCD2FC00C4B26B /* JXMcsChatViewController.m */; };
 		76CDAE3B204001DA008CD198 /* RequestLiveList.m in Sources */ = {isa = PBXBuildFile; fileRef = 449F6E6F1FF4F2A600B41092 /* RequestLiveList.m */; };
@@ -2109,7 +2110,6 @@
 		76CDAEBA204001DA008CD198 /* PopupPaystyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 441919AF1F5C16D300D982C4 /* PopupPaystyleView.m */; };
 		76CDAEBB204001DA008CD198 /* JXVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2A9C21FFCD2FC00C4B26B /* JXVideoRecordViewController.m */; };
 		76CDAEBF204001DA008CD198 /* ResponseForwardList.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE5B71E97ED600037A28D /* ResponseForwardList.m */; };
-		76CDAEC0204001DA008CD198 /* OrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44458C901EF90FCC004C6C80 /* OrderTableCell.m */; };
 		76CDAEC1204001DA008CD198 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 441FF4761FF0DAFE0060217F /* NSObject+MemoryLeak.m */; };
 		76CDAEC2204001DA008CD198 /* MMPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 441566171F03FD3F000336FC /* MMPopupWindow.m */; };
 		76CDAEC3204001DA008CD198 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 441FF46B1FF0DAFE0060217F /* UISplitViewController+MemoryLeak.m */; };
@@ -3074,12 +3074,6 @@
 		44458C841EF90FCC004C6C80 /* AKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTableViewCell.m; sourceTree = "<group>"; };
 		44458C891EF90FCC004C6C80 /* MyOrderTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderTableCell.h; sourceTree = "<group>"; };
 		44458C8A1EF90FCC004C6C80 /* MyOrderTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderTableCell.m; sourceTree = "<group>"; };
-		44458C8B1EF90FCC004C6C80 /* OrderCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellLayout.h; sourceTree = "<group>"; };
-		44458C8C1EF90FCC004C6C80 /* OrderCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellLayout.m; sourceTree = "<group>"; };
-		44458C8D1EF90FCC004C6C80 /* OrderDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailTableCell.h; sourceTree = "<group>"; };
-		44458C8E1EF90FCC004C6C80 /* OrderDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailTableCell.m; sourceTree = "<group>"; };
-		44458C8F1EF90FCC004C6C80 /* OrderTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableCell.h; sourceTree = "<group>"; };
-		44458C901EF90FCC004C6C80 /* OrderTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableCell.m; sourceTree = "<group>"; };
 		44458C911EF90FCC004C6C80 /* PaystyleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaystyleTableCell.h; sourceTree = "<group>"; };
 		44458C921EF90FCC004C6C80 /* PaystyleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaystyleTableCell.m; sourceTree = "<group>"; };
 		44458C991EF90FCC004C6C80 /* YugaoCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YugaoCellLayout.h; sourceTree = "<group>"; };
@@ -3358,6 +3352,12 @@
 		5B1CE8361FA6326ADA0C93D8 /* Pods_akucun_Beta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_akucun_Beta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7602A62C202AEC1E0039B12F /* RequestUserActive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestUserActive.h; sourceTree = "<group>"; };
 		7602A62D202AEC1E0039B12F /* RequestUserActive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestUserActive.m; sourceTree = "<group>"; };
+		76419123207DEDE7006385D5 /* OrderDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailTableCell.h; sourceTree = "<group>"; };
+		76419124207DEDE7006385D5 /* OrderDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailTableCell.m; sourceTree = "<group>"; };
+		76419125207DEDE8006385D5 /* OrderCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCellLayout.h; sourceTree = "<group>"; };
+		76419126207DEDE8006385D5 /* OrderTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableCell.m; sourceTree = "<group>"; };
+		76419127207DEDE8006385D5 /* OrderCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellLayout.m; sourceTree = "<group>"; };
+		76419128207DEDE8006385D5 /* OrderTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableCell.h; sourceTree = "<group>"; };
 		7650C1A91FFE89020032D657 /* RequestLiveProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestLiveProducts.h; sourceTree = "<group>"; };
 		7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestLiveProducts.m; sourceTree = "<group>"; };
 		7650C1AD1FFE89E80032D657 /* ResponseLiveProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseLiveProducts.h; sourceTree = "<group>"; };
@@ -5625,12 +5625,6 @@
 				44458C821EF90FCC004C6C80 /* AKCellLayout.m */,
 				44458C831EF90FCC004C6C80 /* AKTableViewCell.h */,
 				44458C841EF90FCC004C6C80 /* AKTableViewCell.m */,
-				44458C8B1EF90FCC004C6C80 /* OrderCellLayout.h */,
-				44458C8C1EF90FCC004C6C80 /* OrderCellLayout.m */,
-				44458C8F1EF90FCC004C6C80 /* OrderTableCell.h */,
-				44458C901EF90FCC004C6C80 /* OrderTableCell.m */,
-				44458C8D1EF90FCC004C6C80 /* OrderDetailTableCell.h */,
-				44458C8E1EF90FCC004C6C80 /* OrderDetailTableCell.m */,
 				44458C891EF90FCC004C6C80 /* MyOrderTableCell.h */,
 				44458C8A1EF90FCC004C6C80 /* MyOrderTableCell.m */,
 				4415663A1F047E58000336FC /* AfterSaleTableCell.h */,
@@ -6574,6 +6568,12 @@
 				768CD8B42074B3FA00D70F9A /* ASaleCellLayout.m */,
 				768CD8B62074B3FB00D70F9A /* ASaleServiceCell.h */,
 				768CD8B52074B3FB00D70F9A /* ASaleServiceCell.m */,
+				76419125207DEDE8006385D5 /* OrderCellLayout.h */,
+				76419127207DEDE8006385D5 /* OrderCellLayout.m */,
+				76419128207DEDE8006385D5 /* OrderTableCell.h */,
+				76419126207DEDE8006385D5 /* OrderTableCell.m */,
+				76419123207DEDE7006385D5 /* OrderDetailTableCell.h */,
+				76419124207DEDE7006385D5 /* OrderDetailTableCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -7296,6 +7296,7 @@
 				44458CCA1EFA1C0C004C6C80 /* FormTextField.m in Sources */,
 				441566341F0441FF000336FC /* Message.m in Sources */,
 				3EF079AF2004BA7D0030C035 /* RequestModifyUser.m in Sources */,
+				76419129207DEDE8006385D5 /* OrderDetailTableCell.m in Sources */,
 				768CD9062076631800D70F9A /* ResponseRelatedUserList.m in Sources */,
 				768CD77C20725BD900D70F9A /* CartRecycleController.m in Sources */,
 				441669091EF6D252004ADA49 /* AccountRecord.m in Sources */,
@@ -7501,7 +7502,6 @@
 				440F99661F17C06A003DC3DA /* RequestBindPhone.m in Sources */,
 				3E32D4961FEBAFA200104CCE /* NSString+Validate.m in Sources */,
 				768CD8FC2076514800D70F9A /* Member.m in Sources */,
-				44458CA71EF90FCC004C6C80 /* OrderCellLayout.m in Sources */,
 				768CD8F72076246F00D70F9A /* RequestRelatedInfo.m in Sources */,
 				7660AAFE201516280070A148 /* WebViewController.m in Sources */,
 				3EE5B1021FC7EBA800E7D8CD /* LPPopup.m in Sources */,
@@ -7524,6 +7524,7 @@
 				3E743D571FD126F50075AB6E /* AliVideoUpload.m in Sources */,
 				3E308DF71FD936FF0086EE42 /* LogisticsExpressCell.m in Sources */,
 				3EF2AA381FFCD2FC00C4B26B /* JXAppConfig+Extends.m in Sources */,
+				7641912C207DEDE8006385D5 /* OrderTableCell.m in Sources */,
 				44D4F2471E8D052800C34942 /* LWAsyncImageView+WebCache.m in Sources */,
 				442E55241FAAFC4700376026 /* UserConfig.m in Sources */,
 				7697065D2079050E00DBDCA3 /* RequestAftersaleInfo.m in Sources */,
@@ -7621,6 +7622,7 @@
 				441919A41F5C0DFB00D982C4 /* VIPItem.m in Sources */,
 				3EF2AA881FFCD2FD00C4B26B /* JXLocalizeHelper.m in Sources */,
 				3EE5B1611FC7EBCD00E7D8CD /* WXSTransitionManager+BoomAnimation.m in Sources */,
+				7641912F207DEDE8006385D5 /* OrderCellLayout.m in Sources */,
 				441964C41FDB9E4E00F9ABBB /* RequestWuliuTrace.m in Sources */,
 				441919A81F5C0E7600D982C4 /* ResponseVIPList.m in Sources */,
 				441566281F040B4B000336FC /* OptionsPopupView.m in Sources */,
@@ -7711,7 +7713,6 @@
 				768CD8A72074685A00D70F9A /* TipTextView.m in Sources */,
 				444899441F690DC000FD39C7 /* RequestAftersaleTuihuo.m in Sources */,
 				448270481FA0D44700246CA0 /* InvitedUser.m in Sources */,
-				44458CA91EF90FCC004C6C80 /* OrderDetailTableCell.m in Sources */,
 				440FE5EF1E9A084B0037A28D /* GrowingTextView.m in Sources */,
 				3E67AAFB204CDF930084B5CE /* BallWaveView.m in Sources */,
 				441964CC1FDBC1BD00F9ABBB /* LogisticsInfo.m in Sources */,
@@ -7843,7 +7844,6 @@
 				768CD6C82072552800D70F9A /* AuthVerfyController.m in Sources */,
 				440FE5B81E97ED600037A28D /* ResponseForwardList.m in Sources */,
 				768CD7CE20725DFD00D70F9A /* ASaleApplyController.m in Sources */,
-				44458CAB1EF90FCC004C6C80 /* OrderTableCell.m in Sources */,
 				441566221F03FD3F000336FC /* MMPopupWindow.m in Sources */,
 				44141D6D1EADE70300B84321 /* LWAlertView.m in Sources */,
 				768CD77320725BD900D70F9A /* LiveProductController.m in Sources */,
@@ -8164,7 +8164,6 @@
 				3EAAE5D6202302C3006009CE /* IPadAVCaptureController.m in Sources */,
 				3ED237F51FFFAD6300E21A9B /* EBBannerViewController.m in Sources */,
 				3E1991592029759100FB8045 /* SGQRCodeScanManager.m in Sources */,
-				445A5F161F1B3E4000E5E5E6 /* OrderCellLayout.m in Sources */,
 				76B807662003166C00402279 /* RequestTrackSku.m in Sources */,
 				768CD6932072550E00D70F9A /* VIPPurchaseController.m in Sources */,
 				3EF2AA891FFCD2FD00C4B26B /* JXLocalizeHelper.m in Sources */,
@@ -8225,6 +8224,7 @@
 				445A5F2A1F1B3E4000E5E5E6 /* LiveTableCell.m in Sources */,
 				768CD79620725D2700D70F9A /* MessagesController.m in Sources */,
 				44DCA6C81F3F469B0066B6CE /* RequestMemberBuy.m in Sources */,
+				7641912D207DEDE8006385D5 /* OrderTableCell.m in Sources */,
 				3E32D49B1FEBB01000104CCE /* ValidateManger.m in Sources */,
 				445A5F2B1F1B3E4000E5E5E6 /* PopupPickerView.m in Sources */,
 				445A5F2C1F1B3E4000E5E5E6 /* PopupProductView.m in Sources */,
@@ -8367,6 +8367,7 @@
 				3EF079A8200493770030C035 /* TradeDetailCountCell.m in Sources */,
 				445A5F581F1B3E4000E5E5E6 /* CALayer+LWTransaction.m in Sources */,
 				445A5F591F1B3E4000E5E5E6 /* LWTextParser.m in Sources */,
+				7641912A207DEDE8006385D5 /* OrderDetailTableCell.m in Sources */,
 				444899451F690DC000FD39C7 /* RequestAftersaleTuihuo.m in Sources */,
 				768CD8AD20748CC100D70F9A /* RelatedAlertView.m in Sources */,
 				768CD700207258AF00D70F9A /* FeedSaleCollectionCell.m in Sources */,
@@ -8375,7 +8376,6 @@
 				448270491FA0D44700246CA0 /* InvitedUser.m in Sources */,
 				768CD79C20725D2700D70F9A /* MessageCell.m in Sources */,
 				3EF2AAA91FFCD2FD00C4B26B /* JXBubbleView+Video.m in Sources */,
-				445A5F5A1F1B3E4000E5E5E6 /* OrderDetailTableCell.m in Sources */,
 				445A5F5B1F1B3E4000E5E5E6 /* GrowingTextView.m in Sources */,
 				768CD8E42075F60B00D70F9A /* RequestAddrValidateCode.m in Sources */,
 				3EF2AA751FFCD2FD00C4B26B /* JXMcsChatViewController.m in Sources */,
@@ -8483,6 +8483,7 @@
 				3EE5B1D81FC800E900E7D8CD /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				3EF2AA831FFCD2FD00C4B26B /* JXEvalMessageCell.m in Sources */,
 				76602300206F37950082059C /* ProgressView.m in Sources */,
+				76419130207DEDE8006385D5 /* OrderCellLayout.m in Sources */,
 				3EF2AA411FFCD2FC00C4B26B /* JXIMClient+Helper.m in Sources */,
 				445A5F8E1F1B3E4000E5E5E6 /* ECTabBar.m in Sources */,
 				3EE5B1DA1FC800E900E7D8CD /* WXSTransitionManager+FlipAnimation.m in Sources */,
@@ -8512,7 +8513,6 @@
 				445A5F931F1B3E4000E5E5E6 /* ResponseForwardList.m in Sources */,
 				768CD70F207258AF00D70F9A /* MeSaleCell.m in Sources */,
 				768CD80A20725FA400D70F9A /* TrailerViewController.m in Sources */,
-				445A5F941F1B3E4000E5E5E6 /* OrderTableCell.m in Sources */,
 				768CD8EE2076020500D70F9A /* AKAlertView.m in Sources */,
 				441FF4CB1FF0DAFE0060217F /* NSObject+MemoryLeak.m in Sources */,
 				445A5F951F1B3E4000E5E5E6 /* MMPopupWindow.m in Sources */,
@@ -8823,7 +8823,6 @@
 				76CDAD77204001DA008CD198 /* EBBannerViewController.m in Sources */,
 				768CD6942072550E00D70F9A /* VIPPurchaseController.m in Sources */,
 				76CDAD78204001DA008CD198 /* SGQRCodeScanManager.m in Sources */,
-				76CDAD79204001DA008CD198 /* OrderCellLayout.m in Sources */,
 				76CDAD7B204001DA008CD198 /* RequestTrackSku.m in Sources */,
 				768CD8BA2074B3FB00D70F9A /* ASaleCellLayout.m in Sources */,
 				76CDAD7C204001DA008CD198 /* JXLocalizeHelper.m in Sources */,
@@ -8881,6 +8880,7 @@
 				76CDADA7204001DA008CD198 /* CodeScanAlert.m in Sources */,
 				76CDADA8204001DA008CD198 /* ResponseDiscoverList.m in Sources */,
 				768CD79720725D2700D70F9A /* MessagesController.m in Sources */,
+				7641912E207DEDE8006385D5 /* OrderTableCell.m in Sources */,
 				76CDADA9204001DA008CD198 /* LiveTableCell.m in Sources */,
 				76CDADAA204001DA008CD198 /* RequestMemberBuy.m in Sources */,
 				76CDADAB204001DA008CD198 /* ValidateManger.m in Sources */,
@@ -9023,6 +9023,7 @@
 				76CDAE2E204001DA008CD198 /* TradeDetailCountCell.m in Sources */,
 				76CDAE30204001DA008CD198 /* CALayer+LWTransaction.m in Sources */,
 				768CD66F2072524D00D70F9A /* AboutViewController.m in Sources */,
+				7641912B207DEDE8006385D5 /* OrderDetailTableCell.m in Sources */,
 				76CDAE32204001DA008CD198 /* LWTextParser.m in Sources */,
 				768CD8AE20748CC100D70F9A /* RelatedAlertView.m in Sources */,
 				768CD701207258AF00D70F9A /* FeedSaleCollectionCell.m in Sources */,
@@ -9031,7 +9032,6 @@
 				76CDAE34204001DA008CD198 /* InvitedUser.m in Sources */,
 				768CD79D20725D2700D70F9A /* MessageCell.m in Sources */,
 				76CDAE36204001DA008CD198 /* JXBubbleView+Video.m in Sources */,
-				76CDAE37204001DA008CD198 /* OrderDetailTableCell.m in Sources */,
 				76CDAE38204001DA008CD198 /* GrowingTextView.m in Sources */,
 				768CD8E52075F60B00D70F9A /* RequestAddrValidateCode.m in Sources */,
 				76CDAE39204001DA008CD198 /* JXMcsChatViewController.m in Sources */,
@@ -9139,6 +9139,7 @@
 				76CDAEA2204001DA008CD198 /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				76CDAEA3204001DA008CD198 /* JXEvalMessageCell.m in Sources */,
 				76602301206F37950082059C /* ProgressView.m in Sources */,
+				76419131207DEDE8006385D5 /* OrderCellLayout.m in Sources */,
 				76CDAEA5204001DA008CD198 /* JXIMClient+Helper.m in Sources */,
 				76CDAEA6204001DA008CD198 /* ECTabBar.m in Sources */,
 				768CD6AF2072552800D70F9A /* BindPhoneController.m in Sources */,
@@ -9168,7 +9169,6 @@
 				76CDAEBF204001DA008CD198 /* ResponseForwardList.m in Sources */,
 				768CD710207258AF00D70F9A /* MeSaleCell.m in Sources */,
 				768CD80B20725FA400D70F9A /* TrailerViewController.m in Sources */,
-				76CDAEC0204001DA008CD198 /* OrderTableCell.m in Sources */,
 				768CD8EF2076020500D70F9A /* AKAlertView.m in Sources */,
 				76CDAEC1204001DA008CD198 /* NSObject+MemoryLeak.m in Sources */,
 				76CDAEC2204001DA008CD198 /* MMPopupWindow.m in Sources */,

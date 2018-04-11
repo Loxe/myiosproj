@@ -48,7 +48,11 @@
     CGFloat yuan = self.amount*0.01;
     if (self.tradeType == 1) {
         return FORMAT(@"+ %.2f",yuan);
-    } else {
+    }
+    else if (self.tradeType == 2) {
+        return FORMAT(@"%.2f",yuan);
+    }
+    else {
         return FORMAT(@"- %.2f",yuan);
     }
 }
@@ -57,6 +61,9 @@
 {
     if (self.tradeType == 1) {
         return [UIColor greenColor];
+    }
+    else if (self.tradeType == 2) {
+        return COLOR_TEXT_NORMAL;
     }
     return COLOR_MAIN;
 }

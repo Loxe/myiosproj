@@ -41,6 +41,9 @@
                 continue;
             }
             
+//            if (item) {   // 置顶的
+//                [liveInfos insertObject:item atIndex:0];
+//            }
             [liveInfos addObject:item];
             
             //
@@ -161,6 +164,9 @@
     NSComparator cmptr = ^(id obj1, id obj2){
         LiveInfo *p1 = obj1;
         LiveInfo *p2 = obj2;
+//        if (p1.) {    // 置顶的
+//            return (NSComparisonResult)NSOrderedAscending;
+//        }
         if (p1.begintimestamp < p2.begintimestamp) {
             return (NSComparisonResult)NSOrderedDescending;
         }
