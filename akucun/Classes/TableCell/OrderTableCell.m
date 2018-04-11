@@ -103,8 +103,8 @@
             self.scanButton.alpha = 1.0f;
         }
         else {
-            [self.previewButton setNormalTitle:@"申请对账单"];
-            self.previewButton.width = 80;
+            [self.previewButton setNormalTitle:@"对账单"];
+            self.previewButton.width = 60;
         }
 //        self.previewButton.alpha = (layout.adOrder.statu == 4) ? 1.0f : 0.0f;
     }
@@ -136,15 +136,16 @@
     }
     else if (cellLayout.adOrder) {
         model = cellLayout.adOrder;
-        if (cellLayout.adOrder.statu == 4) {
-            url = cellLayout.adOrder.downloadurl;
-        }
-        else if (cellLayout.adOrder.statu == 0) {
-            url = nil;
-        }
-        else {
-            url = cellLayout.adOrder.downloadurl ? : @"";
-        }
+        url = cellLayout.adOrder.downloadurl;
+//        if (cellLayout.adOrder.statu == 4) {
+//            url = cellLayout.adOrder.downloadurl;
+//        }
+//        else if (cellLayout.adOrder.statu == 0) {
+//            url = nil;
+//        }
+//        else {
+//            url = cellLayout.adOrder.downloadurl ? : @"";
+//        }
     }
     if (self.clickedPreviewCallback) {
         self.clickedPreviewCallback(self, model, url);

@@ -406,17 +406,17 @@
 
 - (void) previewDocAction:(NSString *)url model:(id)model
 {
-    if (url == nil) {
-        // 申请对账单
-        AdOrder *order = model;
-        [self requestApplyDoc:order];
-        return;
-    }
+//    if (url == nil) {
+//        // 申请对账单
+//        AdOrder *order = model;
+//        [self requestApplyDoc:order];
+//        return;
+//    }
     
-    if ([model isKindOfClass:[OrderModel class]]) {
-        [self downloadFile:url];
-        return;
-    }
+//    if ([model isKindOfClass:[OrderModel class]]) {
+//        [self downloadFile:url];
+//        return;
+//    }
     
     MMPopupItemHandler block = ^(NSInteger index) {
         if (index == 0) {
@@ -427,11 +427,16 @@
         }
     };
     
+    NSString *title = @"";
     NSArray *items =
     @[MMItemMake(@"更新对账单", MMItemTypeNormal, block),
       MMItemMake(@"下载对账单", MMItemTypeNormal, block)];
     
-    MMSheetView *sheetView = [[MMSheetView alloc] initWithTitle:@"" items:items];
+    if ([NSString isEmpty:url]) {
+        items = @[MMItemMake(@"申请对账单", MMItemTypeNormal, block)];
+    }
+
+    MMSheetView *sheetView = [[MMSheetView alloc] initWithTitle:title items:items];
     [sheetView show];
 }
 
