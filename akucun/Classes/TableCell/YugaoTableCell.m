@@ -18,6 +18,7 @@
 
 @property (nonatomic, strong) SCImageView *logoImage;
 @property (nonatomic, strong) UIImageView *vipIconView;
+@property (nonatomic, strong) UIImageView *qiangImageView;
 
 @property (nonatomic, strong) NSMutableArray *imageViews;
 @property (nonatomic, strong) NSMutableArray* imagePostions;
@@ -86,6 +87,7 @@
 {
     [self.contentView addSubview:self.logoImage];
     [self.contentView addSubview:self.vipIconView];
+    [self.contentView addSubview:self.qiangImageView];
 
     self.imageViews = [NSMutableArray array];
     self.imageUrls = [NSMutableArray array];
@@ -160,6 +162,9 @@
     if (levelFlag > 0) {
         self.vipIconView.hidden = NO;
     }
+    
+    self.qiangImageView.right = SCREEN_WIDTH;
+    self.qiangImageView.hidden = !cellLayout.trailer.isTop;
 }
 
 - (IBAction) forwardAction:(id)sender
@@ -308,6 +313,18 @@
         _vipIconView.hidden = YES;
     }
     return _vipIconView;
+}
+
+- (UIImageView *) qiangImageView
+{
+    if (!_qiangImageView) {
+        _qiangImageView = [[UIImageView alloc] init];
+        _qiangImageView.frame = CGRectMake(0, 0, 46, 46);
+        _qiangImageView.image = IMAGENAMED(@"image_qiang");
+        _qiangImageView.contentMode = UIViewContentModeScaleToFill;
+        _qiangImageView.hidden = YES;
+    }
+    return _qiangImageView;
 }
 
 - (SCImageView *) imageViewAt:(NSInteger)index

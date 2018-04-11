@@ -22,6 +22,7 @@
     [self.contentView addSubview:self.nameLabel];
     [self.contentView addSubview:self.newLabel];
     [self.contentView addSubview:self.vipIconView];
+    [self.contentView addSubview:self.qiangIconView];
 
     [self.logoImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
@@ -61,6 +62,7 @@
     
     self.newLabel.hidden = !isNew;
     self.vipIconView.hidden = (levelFlag <= 0);
+    self.qiangIconView.hidden = !liveInfo.isTop;
     
     CGFloat maxWidth = kLeftMenuWidth-26-1.8*kOFFSET_SIZE;
     if (isNew && levelFlag > 0) {
@@ -73,38 +75,52 @@
         maxWidth = kLeftMenuWidth-26-1.8*kOFFSET_SIZE - 40;
     }
     
+    if (liveInfo.isTop) {
+        maxWidth -= 30;
+    }
+    
     [self.nameLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
         make.left.equalTo(self.logoImage.mas_right).offset(kOFFSET_SIZE*0.8f);
         make.width.lessThanOrEqualTo(@(maxWidth));
     }];
     
-    MASViewAttribute *leftAttribute = self.nameLabel.mas_right;
-    if (!self.vipIconView.hidden) {
+    MASViewAttribute *newAttribute = self.nameLabel.mas_right;
+    MASViewAttribute *iconAttribute = self.nameLabel.mas_right; // qiang
+    if (levelFlag > 0) {
+        NSString *imgName = FORMAT(@"icon_vip%ld",(long)levelFlag);
+        self.vipIconView.image = IMAGENAMED(imgName);
+        
         [self.vipIconView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.contentView);
             make.left.equalTo(self.nameLabel.mas_right).offset(5);
             make.width.mas_equalTo(@(38));
             make.height.mas_equalTo(@(16));
         }];
-        leftAttribute = self.vipIconView.mas_right;
+        newAttribute = self.vipIconView.mas_right;
+        iconAttribute = self.vipIconView.mas_right;
     }
 
     if (isNew) {
         [self.newLabel mas_updateConstraints:^(MASConstraintMaker *make) {
             make.centerY.equalTo(self.contentView);
-            make.left.equalTo(leftAttribute).offset(5);
+            make.left.equalTo(newAttribute).offset(5);
             make.width.mas_equalTo(@(25));
             make.height.mas_equalTo(@(14));
+        }];
+        iconAttribute = self.newLabel.mas_right;
+    }
+    
+    if (liveInfo.isTop) {
+        [self.qiangIconView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self.contentView).offset(-2);
+            make.left.equalTo(iconAttribute).offset(5);
+            make.width.mas_equalTo(@(26));
+            make.height.mas_equalTo(@(24));
         }];
     }
     
     self.nameLabel.text = liveInfo.pinpaiming;
-    
-    if (levelFlag > 0) {
-        NSString *imgName = FORMAT(@"icon_vip%ld",(long)levelFlag);
-        self.vipIconView.image = IMAGENAMED(imgName);
-    }
 
     [self.logoImage sd_setImageWithURL:[NSURL URLWithString:liveInfo.pinpaiurl] placeholderImage:nil];
 }
@@ -122,9 +138,7 @@
         _logoImage = [[UIImageView alloc] initWithFrame:CGRectMake(kOFFSET_SIZE, 0, 26, 26)];
         _logoImage.backgroundColor = WHITE_COLOR;
         _logoImage.contentMode = UIViewContentModeScaleAspectFit;
-        _logoImage.clipsToBounds = YES;
-        _logoImage.userInteractionEnabled = YES;
-        
+        _logoImage.clipsToBounds = YES;        
         _logoImage.layer.cornerRadius = 3.0f;
         _logoImage.layer.borderColor = COLOR_SEPERATOR_LIGHT.CGColor;
         _logoImage.layer.borderWidth = kPIXEL_WIDTH;
@@ -170,6 +184,18 @@
         _vipIconView.hidden = YES;
     }
     return _vipIconView;
+}
+
+- (UIImageView *) qiangIconView
+{
+    if (!_qiangIconView) {
+        _qiangIconView = [[UIImageView alloc] init];
+        _qiangIconView.frame = CGRectMake(0, 0, 26, 24);
+        _qiangIconView.contentMode = UIViewContentModeScaleAspectFit;
+        _qiangIconView.image = IMAGENAMED(@"icon_qiang");
+        _qiangIconView.hidden = YES;
+    }
+    return _qiangIconView;
 }
 
 @end

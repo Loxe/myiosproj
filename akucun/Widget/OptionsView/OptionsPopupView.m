@@ -260,12 +260,12 @@
     seperatorLine.backgroundColor = RGBCOLOR(0xF0, 0xF0, 0xF0);
     [self.contentView addSubview:seperatorLine];
     
-    [self.logoImage mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.logoImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
         make.left.equalTo(self.contentView).offset(kOFFSET_SIZE);
         make.width.height.mas_equalTo(@(26));
     }];
-    [self.nameLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
         make.left.equalTo(self.contentView).offset(kOFFSET_SIZE);
     }];
@@ -276,12 +276,12 @@
 - (void) setOffset:(CGFloat)offset
 {
     _offset = offset;
-    
+    /*
     [self.logoImage mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
         make.left.equalTo(self.contentView).offset(offset);
         make.width.height.mas_equalTo(@(26));
-    }];
+    }];*/
     [self.nameLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.contentView);
         make.left.equalTo(self.contentView).offset(offset);
@@ -292,21 +292,20 @@
 {
     _imageUrl = imageUrl;
 
-    MASViewAttribute *leftAttribute = self.contentView.mas_left;
+//    MASViewAttribute *leftAttribute = self.contentView.mas_left;
     if (imageUrl && imageUrl.length > 0) {
         self.logoImage.hidden = NO;
         [self.logoImage sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:nil options:SDWebImageDelayPlaceholder];
-        leftAttribute = self.logoImage.mas_right;
+//        leftAttribute = self.logoImage.mas_right;
     }
     else {
         self.logoImage.hidden = YES;
         self.logoImage.image = nil;
     }
-    
-    [self.nameLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.contentView);
-        make.left.equalTo(leftAttribute).offset(self.offset);
-    }];
+//    [self.nameLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.centerY.equalTo(self.contentView);
+//        make.left.equalTo(leftAttribute).offset(self.offset);
+//    }];
 }
 
 - (void) setHighlighted:(BOOL)highlighted animated:(BOOL)animated
@@ -325,18 +324,17 @@
 //    else {
 //        self.textLabel.left = self.offset;
 //    }
+//    self.logoImage.centerY = self.centerY;
     self.detailTextLabel.right = SCREEN_WIDTH-kOFFSET_SIZE;
 }
 
 - (UIImageView *) logoImage
 {
     if (!_logoImage) {
-        CGFloat top = isPad ? kOFFSET_SIZE_PAD : kOFFSET_SIZE;
-        _logoImage = [[UIImageView alloc] initWithFrame:CGRectMake(kOFFSET_SIZE, top, 26, 26)];
+        _logoImage = [[UIImageView alloc] initWithFrame:CGRectMake(kOFFSET_SIZE, 0, 26, 26)];
         _logoImage.backgroundColor = WHITE_COLOR;
         _logoImage.contentMode = UIViewContentModeScaleAspectFit;
         _logoImage.clipsToBounds = YES;
-        _logoImage.userInteractionEnabled = YES;
         
         _logoImage.layer.cornerRadius = 3.0f;
         _logoImage.layer.borderColor = COLOR_SEPERATOR_LIGHT.CGColor;

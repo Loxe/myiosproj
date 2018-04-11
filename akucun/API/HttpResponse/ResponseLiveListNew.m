@@ -41,10 +41,16 @@
                 continue;
             }
             
-//            if (item) {   // 置顶的
-//                [liveInfos insertObject:item atIndex:0];
+//            if (index == 0) {
+//                item.isTop = YES;
+//                item.memberLevels = 3;
 //            }
-            [liveInfos addObject:item];
+            if (item.isTop) {   // 置顶的
+                [liveInfos insertObject:item atIndex:0];
+            }
+            else {
+                [liveInfos addObject:item];
+            }
             
             //
             NSInteger count = [forwardData getIntegerValueForKey:item.liveid];
@@ -85,7 +91,12 @@
             if (levelFlag > 0 && vipLevel < levelFlag) {
                 continue;
             }
-            [dxLives addObject:item];
+            if (item.isTop) {   // 置顶的
+                [dxLives insertObject:item atIndex:0];
+            }
+            else {
+                [dxLives addObject:item];
+            }
             
             if (liveId2.length > 0) {
                 [liveId2 appendString:@","];
@@ -123,7 +134,12 @@
             if (levelFlag > 0 && vipLevel < levelFlag) {
                 continue;
             }
-            [explosionLives addObject:item];
+            if (item.isTop) {   // 置顶的
+                [explosionLives insertObject:item atIndex:0];
+            }
+            else {
+                [explosionLives addObject:item];
+            }
             
             if (liveId3.length > 0) {
                 [liveId3 appendString:@","];

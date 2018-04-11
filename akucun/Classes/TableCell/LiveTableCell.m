@@ -236,7 +236,7 @@
     self.newLabel.hidden = !isNew;
     
     self.qiangImageView.right = SCREEN_WIDTH;
-    self.qiangImageView.hidden = NO;
+    self.qiangImageView.hidden = !cellLayout.model.isTop;
 }
 
 - (IBAction) forwardAction:(id)sender
@@ -405,7 +405,7 @@
 {
     if (!_qiangImageView) {
         _qiangImageView = [[UIImageView alloc] init];
-        _qiangImageView.frame = CGRectMake(0, 0, 50, 50);
+        _qiangImageView.frame = CGRectMake(0, 0, 46, 46);
         _qiangImageView.image = IMAGENAMED(@"image_qiang");
         _qiangImageView.contentMode = UIViewContentModeScaleToFill;
         _qiangImageView.hidden = YES;

@@ -19,6 +19,7 @@
 
 @property (nonatomic, strong) UILabel *newLabel;
 @property (nonatomic, strong) UIImageView *vipIconView;
+@property (nonatomic, strong) UIImageView *qiangIconView;
 
 @property (nonatomic, strong) LiveInfo *liveInfo;
 

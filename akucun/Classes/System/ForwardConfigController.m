@@ -142,7 +142,7 @@
     if (indexPath.section == 0) {
         NSArray *options = [UserConfig imageOptions];
         OptionsPopupView *optionsView = [[OptionsPopupView alloc] initWithTitle:@"转发图片选项" options:options selected:[UserConfig imageOptionIndex:self.imageOption]];
-        optionsView.offset = kOFFSET_SIZE;
+//        optionsView.offset = kOFFSET_SIZE;
         optionsView.completeBolck = ^(int index, id content) {
             @strongify(self)
             //

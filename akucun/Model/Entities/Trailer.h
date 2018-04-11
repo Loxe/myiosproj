@@ -29,6 +29,7 @@
 @property (nonatomic, copy) NSString *yugaotupian;
 
 @property (nonatomic, assign) NSInteger memberLevels; // 会员专享标识
+@property (nonatomic, assign) BOOL isTop;   // 活动置顶标识
 
 
 - (NSArray *) imagesUrl;
