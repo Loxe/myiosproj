@@ -1087,6 +1087,27 @@
 		7641912F207DEDE8006385D5 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419127207DEDE8006385D5 /* OrderCellLayout.m */; };
 		76419130207DEDE8006385D5 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419127207DEDE8006385D5 /* OrderCellLayout.m */; };
 		76419131207DEDE8006385D5 /* OrderCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419127207DEDE8006385D5 /* OrderCellLayout.m */; };
+		76419134207E371E006385D5 /* RequestDeliverLives.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419133207E371E006385D5 /* RequestDeliverLives.m */; };
+		76419135207E371E006385D5 /* RequestDeliverLives.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419133207E371E006385D5 /* RequestDeliverLives.m */; };
+		76419136207E371E006385D5 /* RequestDeliverLives.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419133207E371E006385D5 /* RequestDeliverLives.m */; };
+		76419139207E387B006385D5 /* ResponseDeliverLives.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419138207E387B006385D5 /* ResponseDeliverLives.m */; };
+		7641913A207E387B006385D5 /* ResponseDeliverLives.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419138207E387B006385D5 /* ResponseDeliverLives.m */; };
+		7641913B207E387B006385D5 /* ResponseDeliverLives.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419138207E387B006385D5 /* ResponseDeliverLives.m */; };
+		7641913E207EE5DE006385D5 /* RequestDeliverAdorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641913D207EE5DE006385D5 /* RequestDeliverAdorders.m */; };
+		7641913F207EE5DE006385D5 /* RequestDeliverAdorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641913D207EE5DE006385D5 /* RequestDeliverAdorders.m */; };
+		76419140207EE5DE006385D5 /* RequestDeliverAdorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641913D207EE5DE006385D5 /* RequestDeliverAdorders.m */; };
+		76419143207EEA9F006385D5 /* ResponseDeliverAdorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419142207EEA9F006385D5 /* ResponseDeliverAdorders.m */; };
+		76419144207EEA9F006385D5 /* ResponseDeliverAdorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419142207EEA9F006385D5 /* ResponseDeliverAdorders.m */; };
+		76419145207EEA9F006385D5 /* ResponseDeliverAdorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419142207EEA9F006385D5 /* ResponseDeliverAdorders.m */; };
+		76419148207EEB3C006385D5 /* RequestDeliverProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419147207EEB3C006385D5 /* RequestDeliverProducts.m */; };
+		76419149207EEB3C006385D5 /* RequestDeliverProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419147207EEB3C006385D5 /* RequestDeliverProducts.m */; };
+		7641914A207EEB3C006385D5 /* RequestDeliverProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419147207EEB3C006385D5 /* RequestDeliverProducts.m */; };
+		7641914D207EEBD1006385D5 /* ResponseDeliverProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641914C207EEBD1006385D5 /* ResponseDeliverProducts.m */; };
+		7641914E207EEBD1006385D5 /* ResponseDeliverProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641914C207EEBD1006385D5 /* ResponseDeliverProducts.m */; };
+		7641914F207EEBD1006385D5 /* ResponseDeliverProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641914C207EEBD1006385D5 /* ResponseDeliverProducts.m */; };
+		76419152207EECA2006385D5 /* RequestDeliverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419151207EECA2006385D5 /* RequestDeliverSearch.m */; };
+		76419153207EECA2006385D5 /* RequestDeliverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419151207EECA2006385D5 /* RequestDeliverSearch.m */; };
+		76419154207EECA2006385D5 /* RequestDeliverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419151207EECA2006385D5 /* RequestDeliverSearch.m */; };
 		7650C1AB1FFE89020032D657 /* RequestLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */; };
 		7650C1AC1FFE89020032D657 /* RequestLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */; };
 		7650C1AF1FFE89E80032D657 /* ResponseLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AE1FFE89E80032D657 /* ResponseLiveProducts.m */; };
@@ -3358,6 +3379,20 @@
 		76419126207DEDE8006385D5 /* OrderTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableCell.m; sourceTree = "<group>"; };
 		76419127207DEDE8006385D5 /* OrderCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCellLayout.m; sourceTree = "<group>"; };
 		76419128207DEDE8006385D5 /* OrderTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableCell.h; sourceTree = "<group>"; };
+		76419132207E371E006385D5 /* RequestDeliverLives.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestDeliverLives.h; sourceTree = "<group>"; };
+		76419133207E371E006385D5 /* RequestDeliverLives.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestDeliverLives.m; sourceTree = "<group>"; };
+		76419137207E387B006385D5 /* ResponseDeliverLives.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseDeliverLives.h; sourceTree = "<group>"; };
+		76419138207E387B006385D5 /* ResponseDeliverLives.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseDeliverLives.m; sourceTree = "<group>"; };
+		7641913C207EE5DE006385D5 /* RequestDeliverAdorders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestDeliverAdorders.h; sourceTree = "<group>"; };
+		7641913D207EE5DE006385D5 /* RequestDeliverAdorders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestDeliverAdorders.m; sourceTree = "<group>"; };
+		76419141207EEA9F006385D5 /* ResponseDeliverAdorders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseDeliverAdorders.h; sourceTree = "<group>"; };
+		76419142207EEA9F006385D5 /* ResponseDeliverAdorders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseDeliverAdorders.m; sourceTree = "<group>"; };
+		76419146207EEB3C006385D5 /* RequestDeliverProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestDeliverProducts.h; sourceTree = "<group>"; };
+		76419147207EEB3C006385D5 /* RequestDeliverProducts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestDeliverProducts.m; sourceTree = "<group>"; };
+		7641914B207EEBD1006385D5 /* ResponseDeliverProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseDeliverProducts.h; sourceTree = "<group>"; };
+		7641914C207EEBD1006385D5 /* ResponseDeliverProducts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseDeliverProducts.m; sourceTree = "<group>"; };
+		76419150207EECA2006385D5 /* RequestDeliverSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestDeliverSearch.h; sourceTree = "<group>"; };
+		76419151207EECA2006385D5 /* RequestDeliverSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestDeliverSearch.m; sourceTree = "<group>"; };
 		7650C1A91FFE89020032D657 /* RequestLiveProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestLiveProducts.h; sourceTree = "<group>"; };
 		7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestLiveProducts.m; sourceTree = "<group>"; };
 		7650C1AD1FFE89E80032D657 /* ResponseLiveProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseLiveProducts.h; sourceTree = "<group>"; };
@@ -5193,6 +5228,14 @@
 				3EF079B22004EC270030C035 /* RequestTradeList.m */,
 				766022C8206898560082059C /* RequestOrderIsCancel.h */,
 				766022C9206898560082059C /* RequestOrderIsCancel.m */,
+				76419132207E371E006385D5 /* RequestDeliverLives.h */,
+				76419133207E371E006385D5 /* RequestDeliverLives.m */,
+				7641913C207EE5DE006385D5 /* RequestDeliverAdorders.h */,
+				7641913D207EE5DE006385D5 /* RequestDeliverAdorders.m */,
+				76419146207EEB3C006385D5 /* RequestDeliverProducts.h */,
+				76419147207EEB3C006385D5 /* RequestDeliverProducts.m */,
+				76419150207EECA2006385D5 /* RequestDeliverSearch.h */,
+				76419151207EECA2006385D5 /* RequestDeliverSearch.m */,
 			);
 			name = Order;
 			sourceTree = "<group>";
@@ -5279,6 +5322,12 @@
 				441964C71FDBC19700F9ABBB /* ResponseWuliuTrace.m */,
 				3EF079B92004F46D0030C035 /* ResponseTradeList.h */,
 				3EF079BA2004F46D0030C035 /* ResponseTradeList.m */,
+				76419137207E387B006385D5 /* ResponseDeliverLives.h */,
+				76419138207E387B006385D5 /* ResponseDeliverLives.m */,
+				76419141207EEA9F006385D5 /* ResponseDeliverAdorders.h */,
+				76419142207EEA9F006385D5 /* ResponseDeliverAdorders.m */,
+				7641914B207EEBD1006385D5 /* ResponseDeliverProducts.h */,
+				7641914C207EEBD1006385D5 /* ResponseDeliverProducts.m */,
 			);
 			name = Order;
 			sourceTree = "<group>";
@@ -7265,6 +7314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				443A34B01FFBD57A000105D4 /* RequestThirdLogin.m in Sources */,
+				7641913E207EE5DE006385D5 /* RequestDeliverAdorders.m in Sources */,
+				7641914D207EEBD1006385D5 /* ResponseDeliverProducts.m in Sources */,
 				44F7CC461F68045500EA3237 /* ResponseAfterSaleList.m in Sources */,
 				768CD80920725FA400D70F9A /* TrailerViewController.m in Sources */,
 				442F3EAD1FBD93B700808109 /* SearchBarLayout.m in Sources */,
@@ -7358,6 +7409,7 @@
 				3E2AF369202BF2CA00439271 /* UpDownButton.m in Sources */,
 				3E1E6EB42011EA1D000AB26D /* RequestTeamMembers.m in Sources */,
 				441FF4C41FF0DAFE0060217F /* MLeaksMessenger.m in Sources */,
+				76419152207EECA2006385D5 /* RequestDeliverSearch.m in Sources */,
 				44458C9D1EF90FCC004C6C80 /* AKCellLayout.m in Sources */,
 				44D4F25B1E8D052800C34942 /* LWTextLayout.m in Sources */,
 				7660AB1E2017051A0070A148 /* ResponseUserProducts.m in Sources */,
@@ -7402,6 +7454,7 @@
 				4410249A1E9BC1BD00F058F5 /* LiveManager.m in Sources */,
 				441EC1AB1F7CEADA0026A1DD /* JQFMDB.m in Sources */,
 				440FE5D91E98AF950037A28D /* Logistics.m in Sources */,
+				76419139207E387B006385D5 /* ResponseDeliverLives.m in Sources */,
 				3EF2AABE1FFCD2FD00C4B26B /* JXToolBarMoreView.m in Sources */,
 				3EF2AAB01FFCD2FD00C4B26B /* JXMessageCell.m in Sources */,
 				44FF80901F64D0470060BDC4 /* ECChatTextCell.m in Sources */,
@@ -7512,6 +7565,7 @@
 				766022F3206F37950082059C /* LX_layoutAttributes.m in Sources */,
 				44ABBD421E7E6E8D004555A1 /* TextButton.m in Sources */,
 				44141D751EADE70300B84321 /* UIImage+ImageEffects.m in Sources */,
+				76419143207EEA9F006385D5 /* ResponseDeliverAdorders.m in Sources */,
 				440FE5AF1E97DDB80037A28D /* RequestOrderList.m in Sources */,
 				4423FABE1F25A32500BF9290 /* PopupPeihuoView.m in Sources */,
 				440F997C1F19D9CF003DC3DA /* RequestDefaultAddr.m in Sources */,
@@ -7643,10 +7697,12 @@
 				44D4F2561E8D052800C34942 /* LWStorage.m in Sources */,
 				449F6E681FF4D26C00B41092 /* LeftMenuTableCell.m in Sources */,
 				3EE5B1701FC7EC1A00E7D8CD /* VideoSelectModel.m in Sources */,
+				76419134207E371E006385D5 /* RequestDeliverLives.m in Sources */,
 				76583389205BAA3B00A9E18C /* ResponseLiveListNew.m in Sources */,
 				768CD8D42074DABB00D70F9A /* RequestRelatedUserList.m in Sources */,
 				768CD65C2072514B00D70F9A /* FriendListCell.m in Sources */,
 				44304E271F61444E00A3D019 /* ChatMsg.m in Sources */,
+				76419148207EEB3C006385D5 /* RequestDeliverProducts.m in Sources */,
 				44D4F2531E8D052800C34942 /* LWImageProcessor.m in Sources */,
 				3EE5B1621FC7EBCD00E7D8CD /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				3EE5B16A1FC7EBCD00E7D8CD /* WXSTransitionManager+TypeTool.m in Sources */,
@@ -8020,6 +8076,7 @@
 				3E19914F2029759100FB8045 /* SGQRCodeScanningView.m in Sources */,
 				3EF079D0200769360030C035 /* CameraBackController.m in Sources */,
 				768CD6EA207257FE00D70F9A /* TeamBannerCell.m in Sources */,
+				7641913F207EE5DE006385D5 /* RequestDeliverAdorders.m in Sources */,
 				768CD8D02074DA3B00D70F9A /* RequestChangeWXAccount.m in Sources */,
 				3E14AAEF1FF3B0A1005FFE47 /* BankNumberFomatter.m in Sources */,
 				445A5EDE1F1B3E4000E5E5E6 /* ZYSuspensionView.m in Sources */,
@@ -8098,6 +8155,7 @@
 				3EF2AA471FFCD2FD00C4B26B /* NSDateFormatter+Extends.m in Sources */,
 				768CD8FD2076514800D70F9A /* Member.m in Sources */,
 				76583380205BA9B700A9E18C /* CorpTableCell.m in Sources */,
+				76419144207EEA9F006385D5 /* ResponseDeliverAdorders.m in Sources */,
 				3EE5B1CF1FC800D200E7D8CD /* TZPhotoPreviewCell.m in Sources */,
 				445A5EFD1F1B3E4000E5E5E6 /* PlaceholderTextView.m in Sources */,
 				445A5EFE1F1B3E4000E5E5E6 /* MyOrderTableCell.m in Sources */,
@@ -8236,6 +8294,7 @@
 				768CD6902072550E00D70F9A /* RechargeViewController.m in Sources */,
 				3EF2AAB91FFCD2FD00C4B26B /* JXMessageTextView.m in Sources */,
 				3E63CBD5200F3FFC006C97BB /* RewardSectionHeaderView.m in Sources */,
+				7641914E207EEBD1006385D5 /* ResponseDeliverProducts.m in Sources */,
 				3E32D4C71FEBB98800104CCE /* LHSIDCardScaningView.m in Sources */,
 				3ED237FD1FFFAD6300E21A9B /* EBCustomBannerView.m in Sources */,
 				445A5F2F1F1B3E4000E5E5E6 /* LWTextContainer.m in Sources */,
@@ -8300,6 +8359,7 @@
 				768CD73820725AD100D70F9A /* DiscoverViewController.m in Sources */,
 				3EF2AAA11FFCD2FD00C4B26B /* JXBubbleView+Image.m in Sources */,
 				76970663207A065B00DBDCA3 /* RequestRewardStatus.m in Sources */,
+				76419149207EEB3C006385D5 /* RequestDeliverProducts.m in Sources */,
 				441FF4BB1FF0DAFE0060217F /* UIView+MemoryLeak.m in Sources */,
 				3EB8AB4E20084A64004DDA68 /* DDCameraController.m in Sources */,
 				3EAAE5DA20230717006009CE /* IPadCameraFrontController.m in Sources */,
@@ -8376,6 +8436,7 @@
 				448270491FA0D44700246CA0 /* InvitedUser.m in Sources */,
 				768CD79C20725D2700D70F9A /* MessageCell.m in Sources */,
 				3EF2AAA91FFCD2FD00C4B26B /* JXBubbleView+Video.m in Sources */,
+				76419153207EECA2006385D5 /* RequestDeliverSearch.m in Sources */,
 				445A5F5B1F1B3E4000E5E5E6 /* GrowingTextView.m in Sources */,
 				768CD8E42075F60B00D70F9A /* RequestAddrValidateCode.m in Sources */,
 				3EF2AA751FFCD2FD00C4B26B /* JXMcsChatViewController.m in Sources */,
@@ -8479,6 +8540,7 @@
 				7658337D205BA9B700A9E18C /* CorpCellLayout.m in Sources */,
 				3EF2AA971FFCD2FD00C4B26B /* JXVideoConverter.m in Sources */,
 				445A5F8B1F1B3E4000E5E5E6 /* RequestCancelBuy.m in Sources */,
+				7641913A207E387B006385D5 /* ResponseDeliverLives.m in Sources */,
 				445A5F8D1F1B3E4000E5E5E6 /* RequestModifyAddr.m in Sources */,
 				3EE5B1D81FC800E900E7D8CD /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				3EF2AA831FFCD2FD00C4B26B /* JXEvalMessageCell.m in Sources */,
@@ -8560,6 +8622,7 @@
 				4423FABB1F24CEE300BF9290 /* AdOrderManager.m in Sources */,
 				445A5FA51F1B3E4000E5E5E6 /* LWTextRunDelegate.m in Sources */,
 				76B8075A2002707300402279 /* RequestPayQuery.m in Sources */,
+				76419135207E371E006385D5 /* RequestDeliverLives.m in Sources */,
 				3E32D5131FEBD8DC00104CCE /* IDCardBackScaningView.m in Sources */,
 				3E1991572029759100FB8045 /* SGQRCodeAlbumManager.m in Sources */,
 				445A5FA61F1B3E4000E5E5E6 /* ZYKeyboardUtil.m in Sources */,
@@ -8676,6 +8739,7 @@
 				76CDACE9204001DA008CD198 /* RequestAuthUser.m in Sources */,
 				76CDACEA204001DA008CD198 /* LWAlertContentView.m in Sources */,
 				768CD6EB207257FE00D70F9A /* TeamBannerCell.m in Sources */,
+				76419140207EE5DE006385D5 /* RequestDeliverAdorders.m in Sources */,
 				768CD8D12074DA3B00D70F9A /* RequestChangeWXAccount.m in Sources */,
 				76CDACEB204001DA008CD198 /* SGQRCodeScanningView.m in Sources */,
 				76CDACEC204001DA008CD198 /* CameraBackController.m in Sources */,
@@ -8754,6 +8818,7 @@
 				76583381205BA9B700A9E18C /* CorpTableCell.m in Sources */,
 				76CDAD38204001DA008CD198 /* OrderModel.m in Sources */,
 				768CD8FE2076514800D70F9A /* Member.m in Sources */,
+				76419145207EEA9F006385D5 /* ResponseDeliverAdorders.m in Sources */,
 				76CDAD39204001DA008CD198 /* RequestThirdLogin.m in Sources */,
 				76CDAD3A204001DA008CD198 /* NSDateFormatter+Extends.m in Sources */,
 				76CDAD3C204001DA008CD198 /* TZPhotoPreviewCell.m in Sources */,
@@ -8892,6 +8957,7 @@
 				768CD89B2073C3EF00D70F9A /* RelatedListController.m in Sources */,
 				76CDADB2204001DA008CD198 /* Pinpai.m in Sources */,
 				76CDADB3204001DA008CD198 /* ResponseTradeList.m in Sources */,
+				7641914F207EEBD1006385D5 /* ResponseDeliverProducts.m in Sources */,
 				76CDADB4204001DA008CD198 /* JXMessageTextView.m in Sources */,
 				76CDADB5204001DA008CD198 /* RewardSectionHeaderView.m in Sources */,
 				76CDADB6204001DA008CD198 /* LHSIDCardScaningView.m in Sources */,
@@ -8956,6 +9022,7 @@
 				76CDADEF204001DA008CD198 /* JXBubbleView+Image.m in Sources */,
 				768CD73920725AD100D70F9A /* DiscoverViewController.m in Sources */,
 				76970664207A065B00DBDCA3 /* RequestRewardStatus.m in Sources */,
+				7641914A207EEB3C006385D5 /* RequestDeliverProducts.m in Sources */,
 				76CDADF0204001DA008CD198 /* UIView+MemoryLeak.m in Sources */,
 				76CDADF1204001DA008CD198 /* DDCameraController.m in Sources */,
 				76CDADF2204001DA008CD198 /* IPadCameraFrontController.m in Sources */,
@@ -9032,6 +9099,7 @@
 				76CDAE34204001DA008CD198 /* InvitedUser.m in Sources */,
 				768CD79D20725D2700D70F9A /* MessageCell.m in Sources */,
 				76CDAE36204001DA008CD198 /* JXBubbleView+Video.m in Sources */,
+				76419154207EECA2006385D5 /* RequestDeliverSearch.m in Sources */,
 				76CDAE38204001DA008CD198 /* GrowingTextView.m in Sources */,
 				768CD8E52075F60B00D70F9A /* RequestAddrValidateCode.m in Sources */,
 				76CDAE39204001DA008CD198 /* JXMcsChatViewController.m in Sources */,
@@ -9135,6 +9203,7 @@
 				7658337E205BA9B700A9E18C /* CorpCellLayout.m in Sources */,
 				76CDAE9E204001DA008CD198 /* JXVideoConverter.m in Sources */,
 				76CDAE9F204001DA008CD198 /* RequestCancelBuy.m in Sources */,
+				7641913B207E387B006385D5 /* ResponseDeliverLives.m in Sources */,
 				76CDAEA1204001DA008CD198 /* RequestModifyAddr.m in Sources */,
 				76CDAEA2204001DA008CD198 /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				76CDAEA3204001DA008CD198 /* JXEvalMessageCell.m in Sources */,
@@ -9216,6 +9285,7 @@
 				76CDAEEA204001DA008CD198 /* AdOrderManager.m in Sources */,
 				76CDAEEB204001DA008CD198 /* LWTextRunDelegate.m in Sources */,
 				76CDAEEC204001DA008CD198 /* RequestPayQuery.m in Sources */,
+				76419136207E371E006385D5 /* RequestDeliverLives.m in Sources */,
 				76CDAEED204001DA008CD198 /* IDCardBackScaningView.m in Sources */,
 				76CDAEEE204001DA008CD198 /* SGQRCodeAlbumManager.m in Sources */,
 				76CDAEEF204001DA008CD198 /* ZYKeyboardUtil.m in Sources */,

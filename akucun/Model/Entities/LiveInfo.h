@@ -32,6 +32,11 @@
 @property (nonatomic, assign) NSInteger memberLevels; // 会员专享标识
 @property (nonatomic, assign) BOOL isTop;   // 活动置顶标识
 
+// 订单
+@property (nonatomic, assign) NSInteger prosum;     // 活动下订单商品总数量
+@property (nonatomic, assign) NSInteger adcount;    // 活动下发货单数量
+
+
 - (NSArray *) imagesUrl;
 
 // 活动开始两小时内

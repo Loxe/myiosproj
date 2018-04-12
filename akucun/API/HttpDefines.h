@@ -219,6 +219,9 @@
 #define     ACTION_DELIVER_APPLY    @"apply"
 #define     ACTION_DELIVER_ADDR     @"modifyaddrunused" //@"modifyaddr"
 #define     ACTION_DELIVER_TRACE    @"trace"
+#define     ACTION_DELIVER_ADORDERS @"getadorderid"
+#define     ACTION_DELIVER_PRODUCTS @"getorderdetail"
+#define     ACTION_DELIVER_SEARCH   @"searchdeliverproduct"
 
 #define     ACTION_MESSAGE_LIST     @"page"
 #define     ACTION_MESSAGE_READ     @"readMsg"
