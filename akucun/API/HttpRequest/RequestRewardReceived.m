@@ -24,7 +24,10 @@
 {
     [super initParamsDictionary];
     
+    [self.dataParams setParamIntegerValue:2 forKey:@"version"];
+
     [self.dataParams setParamIntegerValue:self.type forKey:@"type"];
+    [self.dataParams setParamValue:self.reissueid forKey:@"reissueid"];
 }
 
 @end

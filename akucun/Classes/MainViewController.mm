@@ -547,6 +547,7 @@
     NSDictionary *payload = [jsonData objectForKey:@"payload"];
     NSInteger type = [payload getIntegerValueForKey:@"type"];
     NSInteger amount = [payload getIntegerValueForKey:@"amount"];
+    NSString *Id = [payload getStringForKey:@"id"];
     
     [MMPopupView hideAll];
     
@@ -556,7 +557,7 @@
     alertView.actionBlock = ^{
         @strongify(self)
         self.isShowReward = NO;
-        [self requestRewardReceived:type];
+        [self requestRewardReceived:type Id:Id];
         
         if (self.rewardInfos.count > 0) {
             [self showRewardAlert:self.rewardInfos[0]];
@@ -735,10 +736,11 @@
      } onFailed:nil];
 }
 
-- (void) requestRewardReceived:(NSInteger)type
+- (void) requestRewardReceived:(NSInteger)type Id:(NSString *)Id
 {
     RequestRewardReceived *request = [RequestRewardReceived new];
     request.type = type;
+    request.reissueid = Id;
     
     [SCHttpServiceFace serviceWithRequest:request
                                 onSuccess:^(id content)

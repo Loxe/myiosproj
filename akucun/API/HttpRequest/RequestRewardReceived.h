@@ -11,5 +11,6 @@
 @interface RequestRewardReceived : HttpRequestBase
 
 @property (nonatomic, assign) NSInteger type;
+@property (nonatomic, copy) NSString *reissueid;
 
 @end
