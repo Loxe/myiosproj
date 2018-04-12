@@ -261,21 +261,21 @@
             flag = NO;
             [UIView animateWithDuration:self.animationTimeInterval animations:^{
                 frame.origin.y += 2;
-                _scanningline.frame = frame;
+                self.scanningline.frame = frame;
             } completion:nil];
         } else {
-            if (_scanningline.frame.origin.y >= - scanBorderW) {
+            if (self.scanningline.frame.origin.y >= - scanBorderW) {
                 CGFloat scanContent_MaxY = - scanBorderW + scanViewW - 2 * scanBorderX;
-                if (_scanningline.frame.origin.y >= scanContent_MaxY) {
+                if (self.scanningline.frame.origin.y >= scanContent_MaxY) {
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         frame.origin.y = - scanBorderW;
-                        _scanningline.frame = frame;
+                        self.scanningline.frame = frame;
                         flag = YES;
                     });
                 } else {
                     [UIView animateWithDuration:self.animationTimeInterval animations:^{
                         frame.origin.y += 2;
-                        _scanningline.frame = frame;
+                        self.scanningline.frame = frame;
                     } completion:nil];
                 }
             } else {
@@ -290,7 +290,7 @@
             flag = NO;
             [UIView animateWithDuration:self.animationTimeInterval animations:^{
                 frame.origin.y += 2;
-                _scanningline.frame = frame;
+                self.scanningline.frame = frame;
             } completion:nil];
         } else {
 //            if (_scanningline.frame.origin.y >= scanBorderY) {
@@ -307,17 +307,17 @@
 //                }
             CGFloat compareValue = _scanningType == ScanningTypeBarCode ? scanBarcodeY : scanBorderY;
             
-            if (_scanningline.frame.origin.y >= compareValue) {
+            if (self.scanningline.frame.origin.y >= compareValue) {
                 CGFloat scanContent_MaxY = _scanningType == ScanningTypeBarCode ? scanBarcodeY+0.4*scanW : scanBorderY+scanViewW-2*scanBorderX;
                 
-                if (_scanningline.frame.origin.y >= scanContent_MaxY - 10) {
+                if (self.scanningline.frame.origin.y >= scanContent_MaxY - 10) {
                     frame.origin.y = ScanningTypeBarCode ? scanBarcodeY : scanBorderY;
-                    _scanningline.frame = frame;
+                    self.scanningline.frame = frame;
                     flag = YES;
                 } else {
                     [UIView animateWithDuration:self.animationTimeInterval animations:^{
                         frame.origin.y += 2;
-                        _scanningline.frame = frame;
+                        self.scanningline.frame = frame;
                     } completion:nil];
                 }
             } else {

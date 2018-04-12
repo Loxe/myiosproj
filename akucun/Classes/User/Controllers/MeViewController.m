@@ -48,6 +48,7 @@
 #import "BarcodeScanController.h"
 #import "InviteFriendListController.h"
 #import "WebViewController.h"
+#import "MyOrderPageController.h"
 
 @interface MeViewController ()<UITableViewDataSource,UITableViewDelegate,MeSaleCellDelegate,MeOrderCellDelegate,MeFeedSaleCellDelegate,MeMoreCellDelegate>
 
@@ -292,8 +293,8 @@
 
 - (void) orderAction:(NSInteger)type
 {
-    MyOrderController *controller = [MyOrderController new];
-    controller.orderType = type;
+    MyOrderPageController *controller = [MyOrderPageController new];
+    controller.initIndex = type;
     [self.navigationController pushViewController:controller animated:YES];
 }
 
@@ -311,6 +312,7 @@
 }
 
 #pragma mark - UITableViewDataSource
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 4;

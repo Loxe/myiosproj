@@ -40,7 +40,14 @@
     
     self.showSeperator = YES;
     
+    [self setupContent];
+    
     return self;
+}
+
+- (void) setupContent
+{
+    
 }
 
 - (void) setIsSubcellStyle:(BOOL)isSubcellStyle

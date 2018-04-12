@@ -171,9 +171,9 @@
             dispatch_source_cancel(_timer);
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置（倒计时结束后调用）
-                [_smsCodeButton setTitle:@"重新发送" forState:UIControlStateNormal];
+                [self.smsCodeButton setTitle:@"重新发送" forState:UIControlStateNormal];
                 //设置不可点击
-                _smsCodeButton.enabled = YES;
+                self.smsCodeButton.enabled = YES;
             });
         }
         else{
@@ -183,9 +183,9 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置
 //                NSLog(@"____%@",strTime);
-                [_smsCodeButton setTitle:[NSString stringWithFormat:@"重新发送(%@s)",strTime] forState:UIControlStateNormal];
+                [self.smsCodeButton setTitle:[NSString stringWithFormat:@"重新发送(%@s)",strTime] forState:UIControlStateNormal];
                 //设置可点击
-                _smsCodeButton.enabled = NO;
+                self.smsCodeButton.enabled = NO;
             });
             timeout--;
         }

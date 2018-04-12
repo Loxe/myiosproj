@@ -14,6 +14,4 @@
 
 @property (nonatomic, assign) BOOL shouldUpdate;
 
-- (void) updateData:(voidBlock)finished;
-
 @end

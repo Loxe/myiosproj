@@ -58,7 +58,7 @@
                 self.finished(i);
             }
             // 点击之后返回到当前界面
-            [_alert dismissViewControllerAnimated:YES completion:nil];
+            [self.alert dismissViewControllerAnimated:YES completion:nil];
         }];
         
 //        NSString *title = actionTitles[i];
@@ -67,13 +67,13 @@
 //        [action setValue:text forKey:@"attributedTitle"];
 
         [action setValue:COLOR_SELECTED forKey:@"_titleTextColor"];
-        [_alert addAction:action];
+        [self.alert addAction:action];
     }
     
     // Cancel
     UIAlertAction * cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [cancelAction setValue:GRAY_COLOR forKey:@"_titleTextColor"];
-    [_alert addAction:cancelAction];
+    [self.alert addAction:cancelAction];
 }
 
 @end

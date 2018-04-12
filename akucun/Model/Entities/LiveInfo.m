@@ -12,6 +12,12 @@
 
 @implementation LiveInfo
 
++ (NSDictionary *) modelCustomPropertyMapper
+{
+    return @{ @"isTop": @[@"isTop", @"top"]
+            };
+}
+
 + (NSDictionary *) modelContainerPropertyGenericClass
 {
     return @{ @"comments" : [Comment class]

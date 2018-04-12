@@ -103,7 +103,7 @@
     _rect_progressView.size.width = MIN(percentW, self.bounds.size.width);
     
     [UIView animateWithDuration:.2f animations:^{
-        self.progressView.frame = _rect_progressView;
+        self.progressView.frame = self.rect_progressView;
     }];
 }
 

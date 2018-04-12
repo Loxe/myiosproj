@@ -116,7 +116,7 @@
 //    }
 }
 
-- (void) updateData:(voidBlock)finished
+- (void) updateData
 {
     if (self.isImageBrowser) {
         self.isImageBrowser = NO;
@@ -129,7 +129,7 @@
     else if (self.shouldUpdate) {
         [SVProgressHUD showWithStatus:nil];
         self.pageNo = 1;
-        [self requestListData:finished];
+        [self requestListData:nil];
     }
     
 //    if (!self.dataSource || [UserManager instance].isDiscoverUpdated) {

@@ -30,11 +30,13 @@
 @property (nonatomic, copy) NSString *checksheeturl;  // 对账单下载地址
 
 @property (nonatomic, assign) NSInteger memberLevels; // 会员专享标识
-@property (nonatomic, assign) BOOL isTop;   // 活动置顶标识
+@property (nonatomic, assign) BOOL isTop;           // 活动置顶标识
 
 // 订单
-@property (nonatomic, assign) NSInteger prosum;     // 活动下订单商品总数量
 @property (nonatomic, assign) NSInteger adcount;    // 活动下发货单数量
+@property (nonatomic, assign) NSInteger prosum;     // 活动下订单商品总数量
+@property (nonatomic, assign) NSInteger scancount;  // 已扫描分拣的商品数量
+@property (nonatomic, assign) NSInteger amount;     // 活动下订单商品总金额
 
 
 - (NSArray *) imagesUrl;

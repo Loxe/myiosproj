@@ -72,9 +72,9 @@
 {
     if (self.chatBox.status != ECChatBoxStatusNothing) {
         [self.chatBox resignFirstResponder];
-        if (_delegate && [_delegate respondsToSelector:@selector(chatViewController:didChangeHeight:)]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(chatViewController:didChangeHeight:)]) {
             [UIView animateWithDuration:0.3 animations:^{
-                [_delegate chatViewController:self didChangeHeight:CHAT_BAR_HEIGHT+kSafeAreaBottomHeight];
+                [self.delegate chatViewController:self didChangeHeight:CHAT_BAR_HEIGHT+kSafeAreaBottomHeight];
             } completion:^(BOOL finished) {
                 // 状态改变
                 self.chatBox.status = ECChatBoxStatusNothing;

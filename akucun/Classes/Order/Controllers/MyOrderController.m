@@ -32,7 +32,7 @@
 
 @interface MyOrderController () <UITableViewDataSource,UITableViewDelegate, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate, QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 
-@property (nonatomic, strong) TopBarView* topBarView;
+//@property (nonatomic, strong) TopBarView* topBarView;
 
 @property (nonatomic, strong) UITableView* tableView;
 @property (nonatomic, strong) NSMutableArray* dataSource;
@@ -52,7 +52,7 @@
     
     self.title = @"我的订单";
     
-    [self.view addSubview:self.topBarView];
+//    [self.view addSubview:self.topBarView];
     [self.view addSubview:self.tableView];
 
     //
@@ -92,10 +92,25 @@
 - (void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [SVProgressHUD setContainerView:nil];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
-
+/*
     if (self.topBarView.selectedIndex != self.orderType) {
         self.topBarView.selectedIndex = self.orderType;
+    }
+    else if (self.orderType <= 1) {
+        self.pageNo = 1;
+        [self.tableView.mj_footer resetNoMoreData];
+        self.tableView.mj_footer.hidden = YES;
+        [self requestOrderList:self.pageNo type:(self.orderType - 1)];
+    }
+ */
+}
+
+- (void) updateData
+{
+    if (!self.dataSource || self.dataSource.count == 0) {
+        [self refreshOrderList];
     }
     else if (self.orderType <= 1) {
         self.pageNo = 1;
@@ -643,7 +658,7 @@
 - (UITableView *) tableView
 {
     if (!_tableView) {
-        CGRect frame = CGRectMake(0, self.topBarView.bottom, self.view.width, self.view.height - self.topBarView.bottom);
+        CGRect frame = CGRectMake(0, 0, self.view.width, self.view.height);
         _tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
         _tableView.backgroundColor = CLEAR_COLOR;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -658,7 +673,7 @@
     }
     return _tableView;
 }
-
+/*
 - (TopBarView *) topBarView
 {
     if (!_topBarView) {
@@ -674,5 +689,5 @@
     }
     return _topBarView;
 }
-
+*/
 @end

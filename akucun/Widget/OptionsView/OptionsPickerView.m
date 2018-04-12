@@ -256,17 +256,17 @@
     }
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    [window addSubview:_handerView];
+    [window addSubview:self.handerView];
     
     [self selectButtonIndex:0];
     
-    _handerView.alpha = 0.f;
+    self.handerView.alpha = 0.f;
     CGPoint center = self.center;
     [UIView animateWithDuration:0.2f
                           delay:0.f
                         options:UIViewAnimationOptionCurveEaseInOut animations:^
      {
-         _handerView.alpha = 1.f;
+         self.handerView.alpha = 1.f;
          self.center = CGPointMake(center.x, SCREEN_HEIGHT-self.height/2);
      }
                      completion:^(BOOL finished)
@@ -281,10 +281,10 @@
     CGPoint center = self.center;
     [UIView animateWithDuration:0.3f animations:^{
         self.center = CGPointMake(center.x, SCREEN_HEIGHT+self.height/2);
-        _handerView.alpha = 0.f;
+        self.handerView.alpha = 0.f;
     } completion:^(BOOL finished) {
-        [_handerView removeFromSuperview];
-        _handerView = nil;
+        [self.handerView removeFromSuperview];
+        self.handerView = nil;
     }];
 }
 

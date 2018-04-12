@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 
 #import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 //#import "AFNetworking.h"
 #import "SCUtility.h"
 #import "UIScrollView+akucun.h"

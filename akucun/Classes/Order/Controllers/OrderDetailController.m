@@ -138,11 +138,11 @@
     }];
     
     [self.totalLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_footerView.mas_left).offset(kOFFSET_SIZE);
-        make.centerY.equalTo(_footerView.mas_centerY).offset(-kSafeAreaBottomHeight*0.25f);
+        make.left.equalTo(self.footerView.mas_left).offset(kOFFSET_SIZE);
+        make.centerY.equalTo(self.footerView.mas_centerY).offset(-kSafeAreaBottomHeight*0.25f);
     }];
     [self.amountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(_footerView.mas_right).offset(-kOFFSET_SIZE);
+        make.right.equalTo(self.footerView.mas_right).offset(-kOFFSET_SIZE);
         make.centerY.equalTo(self.totalLabel);
     }];
     [self.typeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -152,7 +152,7 @@
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.equalTo(self.view);
-        make.bottom.equalTo(_footerView.mas_top);
+        make.bottom.equalTo(self.footerView.mas_top);
     }];
 }
 

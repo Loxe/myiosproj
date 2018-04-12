@@ -315,7 +315,7 @@
                         [self setPostBtnState:YES];
                         return ;
                     }
-                    [_client uploadWithVideoPath:videoPath imagePath:imagePath svideoInfo:info accessKeyId:keyId accessKeySecret:keySecret accessToken:token];
+                    [self.client uploadWithVideoPath:videoPath imagePath:imagePath svideoInfo:info accessKeyId:keyId accessKeySecret:keySecret accessToken:token];
                 }];
             }
         } else {
@@ -505,7 +505,7 @@
     UIAlertAction     *exitAction   = [UIAlertAction actionWithTitle:@"退出" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         // 防止在出现上传前，点击取消
         [SVProgressHUD dismiss];
-        [_client cancel];
+        [self.client cancel];
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
     [alerVC addAction:cancelAction];
@@ -688,7 +688,7 @@
     NSLog(@"uploadTokenExpired----");
     
     [[AliManger new] requestSTSWithHandler:^(NSString *keyId, NSString *keySecret, NSString *token, NSString *expireTime, NSError *error) {
-        [_client refreshWithAccessKeyId:keyId accessKeySecret:keySecret accessToken:token expireTime:expireTime];
+        [self.client refreshWithAccessKeyId:keyId accessKeySecret:keySecret accessToken:token expireTime:expireTime];
         //[self postContentsUploadByAli];//上传视频的方法
     }];
 }

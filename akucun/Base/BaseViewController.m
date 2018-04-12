@@ -103,6 +103,10 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.leftButton];
 }
 
+- (void) updateData
+{
+}
+
 - (void) setShowTitle:(BOOL)showTitle
 {
     _showTitle = showTitle;

@@ -587,15 +587,15 @@
         
         [_contentView addSubview:self.resultLabel];
         [self.resultLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_contentView).offset(kOFFSET_SIZE);
-            make.left.right.equalTo(_contentView);
+            make.top.equalTo(self.contentView).offset(kOFFSET_SIZE);
+            make.left.right.equalTo(self.contentView);
         }];
 
         [_contentView addSubview:self.statusLabel];
         [self.statusLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.resultLabel.mas_bottom).offset(2*kOFFSET_SIZE);
-            make.left.equalTo(_contentView).offset(kOFFSET_SIZE);
-            make.right.equalTo(_contentView).offset(-kOFFSET_SIZE);
+            make.left.equalTo(self.contentView).offset(kOFFSET_SIZE);
+            make.right.equalTo(self.contentView).offset(-kOFFSET_SIZE);
         }];
     }
     return _contentView;

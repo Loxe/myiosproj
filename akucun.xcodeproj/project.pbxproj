@@ -1108,6 +1108,18 @@
 		76419152207EECA2006385D5 /* RequestDeliverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419151207EECA2006385D5 /* RequestDeliverSearch.m */; };
 		76419153207EECA2006385D5 /* RequestDeliverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419151207EECA2006385D5 /* RequestDeliverSearch.m */; };
 		76419154207EECA2006385D5 /* RequestDeliverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419151207EECA2006385D5 /* RequestDeliverSearch.m */; };
+		76419157207F3537006385D5 /* DeliverLivesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419156207F3537006385D5 /* DeliverLivesController.m */; };
+		76419158207F3537006385D5 /* DeliverLivesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419156207F3537006385D5 /* DeliverLivesController.m */; };
+		76419159207F3537006385D5 /* DeliverLivesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419156207F3537006385D5 /* DeliverLivesController.m */; };
+		7641915C207F38C7006385D5 /* DeliverLiveTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641915B207F38C7006385D5 /* DeliverLiveTableCell.m */; };
+		7641915D207F38C7006385D5 /* DeliverLiveTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641915B207F38C7006385D5 /* DeliverLiveTableCell.m */; };
+		7641915E207F38C7006385D5 /* DeliverLiveTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7641915B207F38C7006385D5 /* DeliverLiveTableCell.m */; };
+		76419161207F3A95006385D5 /* MyOrderPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419160207F3A95006385D5 /* MyOrderPageController.m */; };
+		76419162207F3A95006385D5 /* MyOrderPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419160207F3A95006385D5 /* MyOrderPageController.m */; };
+		76419163207F3A95006385D5 /* MyOrderPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419160207F3A95006385D5 /* MyOrderPageController.m */; };
+		76419166207F8660006385D5 /* DeliverDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419165207F8660006385D5 /* DeliverDetailController.m */; };
+		76419167207F8660006385D5 /* DeliverDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419165207F8660006385D5 /* DeliverDetailController.m */; };
+		76419168207F8660006385D5 /* DeliverDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76419165207F8660006385D5 /* DeliverDetailController.m */; };
 		7650C1AB1FFE89020032D657 /* RequestLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */; };
 		7650C1AC1FFE89020032D657 /* RequestLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */; };
 		7650C1AF1FFE89E80032D657 /* ResponseLiveProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650C1AE1FFE89E80032D657 /* ResponseLiveProducts.m */; };
@@ -3393,6 +3405,14 @@
 		7641914C207EEBD1006385D5 /* ResponseDeliverProducts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseDeliverProducts.m; sourceTree = "<group>"; };
 		76419150207EECA2006385D5 /* RequestDeliverSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestDeliverSearch.h; sourceTree = "<group>"; };
 		76419151207EECA2006385D5 /* RequestDeliverSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestDeliverSearch.m; sourceTree = "<group>"; };
+		76419155207F3537006385D5 /* DeliverLivesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliverLivesController.h; sourceTree = "<group>"; };
+		76419156207F3537006385D5 /* DeliverLivesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliverLivesController.m; sourceTree = "<group>"; };
+		7641915A207F38C7006385D5 /* DeliverLiveTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliverLiveTableCell.h; sourceTree = "<group>"; };
+		7641915B207F38C7006385D5 /* DeliverLiveTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliverLiveTableCell.m; sourceTree = "<group>"; };
+		7641915F207F3A95006385D5 /* MyOrderPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOrderPageController.h; sourceTree = "<group>"; };
+		76419160207F3A95006385D5 /* MyOrderPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOrderPageController.m; sourceTree = "<group>"; };
+		76419164207F8660006385D5 /* DeliverDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliverDetailController.h; sourceTree = "<group>"; };
+		76419165207F8660006385D5 /* DeliverDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliverDetailController.m; sourceTree = "<group>"; };
 		7650C1A91FFE89020032D657 /* RequestLiveProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestLiveProducts.h; sourceTree = "<group>"; };
 		7650C1AA1FFE89020032D657 /* RequestLiveProducts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestLiveProducts.m; sourceTree = "<group>"; };
 		7650C1AD1FFE89E80032D657 /* ResponseLiveProducts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseLiveProducts.h; sourceTree = "<group>"; };
@@ -6572,6 +6592,8 @@
 			children = (
 				768CD7B220725DFD00D70F9A /* PayViewController.h */,
 				768CD7AA20725DFD00D70F9A /* PayViewController.m */,
+				7641915F207F3A95006385D5 /* MyOrderPageController.h */,
+				76419160207F3A95006385D5 /* MyOrderPageController.m */,
 				768CD7B320725DFD00D70F9A /* MyOrderController.h */,
 				768CD7A920725DFD00D70F9A /* MyOrderController.m */,
 				768CD7B420725DFD00D70F9A /* OrderBaseController.h */,
@@ -6580,6 +6602,10 @@
 				768CD7A020725DFD00D70F9A /* OrderDetailController.m */,
 				768CD7AE20725DFD00D70F9A /* OrderSearchController.h */,
 				768CD7A120725DFD00D70F9A /* OrderSearchController.m */,
+				76419155207F3537006385D5 /* DeliverLivesController.h */,
+				76419156207F3537006385D5 /* DeliverLivesController.m */,
+				76419164207F8660006385D5 /* DeliverDetailController.h */,
+				76419165207F8660006385D5 /* DeliverDetailController.m */,
 				768CD7A720725DFD00D70F9A /* DocPreviewController.h */,
 				768CD7AF20725DFD00D70F9A /* DocPreviewController.m */,
 				768CD7D720725E4B00D70F9A /* AfterSalesController.h */,
@@ -6623,6 +6649,8 @@
 				76419126207DEDE8006385D5 /* OrderTableCell.m */,
 				76419123207DEDE7006385D5 /* OrderDetailTableCell.h */,
 				76419124207DEDE7006385D5 /* OrderDetailTableCell.m */,
+				7641915A207F38C7006385D5 /* DeliverLiveTableCell.h */,
+				7641915B207F38C7006385D5 /* DeliverLiveTableCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -7382,6 +7410,7 @@
 				3EF2AAB21FFCD2FD00C4B26B /* JXMessageTimeCell.m in Sources */,
 				440FE5DE1E98B1C10037A28D /* RequestCartProducts.m in Sources */,
 				3E1E6EC42011F724000AB26D /* ResponseTeamList.m in Sources */,
+				7641915C207F38C7006385D5 /* DeliverLiveTableCell.m in Sources */,
 				3EE5B1601FC7EBCD00E7D8CD /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				768CD77F20725BD900D70F9A /* ProductTableCell.m in Sources */,
 				44ABBD5C1E7E831B004555A1 /* UserManager.m in Sources */,
@@ -7508,6 +7537,7 @@
 				449F6E641FF4D26C00B41092 /* HomeViewController.m in Sources */,
 				441566381F044308000336FC /* RequestMsgRead.m in Sources */,
 				441404F41F072FB900265055 /* TipMessageView.m in Sources */,
+				76419166207F8660006385D5 /* DeliverDetailController.m in Sources */,
 				3EF2AA9A1FFCD2FD00C4B26B /* JXVoiceMessagePlayer.mm in Sources */,
 				768CD77620725BD900D70F9A /* ProductBaseController.m in Sources */,
 				3E1991522029759100FB8045 /* SGQRCodeGenerateManager.m in Sources */,
@@ -7602,6 +7632,7 @@
 				44FF80951F652C550060BDC4 /* RequestKefuRefresh.m in Sources */,
 				44D4F2611E8D052800C34942 /* LWTransactionGroup.m in Sources */,
 				441566301F0441B2000336FC /* ResponseMsgList.m in Sources */,
+				76419157207F3537006385D5 /* DeliverLivesController.m in Sources */,
 				441AAC681FC7F466007D8314 /* RequestDiscoverUpload.m in Sources */,
 				4490CA6D1F6E721C00568EB7 /* RechargeTableCell.m in Sources */,
 				7658338E205BAA5700A9E18C /* RequestLiveListNew.m in Sources */,
@@ -7668,6 +7699,7 @@
 				768CD827207353E100D70F9A /* VIPLevelAlertView.m in Sources */,
 				3EF079DC20076D710030C035 /* UIImage+CCTool.m in Sources */,
 				440FE5CD1E98835F0037A28D /* ResponseCartProducts.m in Sources */,
+				76419161207F3A95006385D5 /* MyOrderPageController.m in Sources */,
 				7658337F205BA9B700A9E18C /* CorpTableCell.m in Sources */,
 				768CD80C20725FA400D70F9A /* LiveListViewController.m in Sources */,
 				44D4F2441E8D052800C34942 /* LWAsyncDisplayLayer.m in Sources */,
@@ -8016,6 +8048,7 @@
 				3EF2AA631FFCD2FD00C4B26B /* JXChatViewController+MessageSend.m in Sources */,
 				441FF4BD1FF0DAFE0060217F /* UITouch+MemoryLeak.m in Sources */,
 				441FF4C51FF0DAFE0060217F /* MLeaksMessenger.m in Sources */,
+				76419158207F3537006385D5 /* DeliverLivesController.m in Sources */,
 				445A5EC31F1B3E4000E5E5E6 /* TopNumButton.m in Sources */,
 				76AE00C1206417B400953696 /* BarcodeScanController.m in Sources */,
 				768CD76B20725BD900D70F9A /* ProductsViewController.m in Sources */,
@@ -8094,6 +8127,7 @@
 				3EF2AAB11FFCD2FD00C4B26B /* JXMessageCell.m in Sources */,
 				766B24DB2065AEB9001D3401 /* RequestUnbindUser.m in Sources */,
 				3EF2AA951FFCD2FD00C4B26B /* JXMovieWriter.m in Sources */,
+				76419167207F8660006385D5 /* DeliverDetailController.m in Sources */,
 				445A5EE31F1B3E4000E5E5E6 /* AdOrder.m in Sources */,
 				3EF2AA651FFCD2FD00C4B26B /* JXChatViewController+Toolbar.m in Sources */,
 				766DED7320609D9500F17E30 /* PopupLivesView.m in Sources */,
@@ -8170,6 +8204,7 @@
 				444F58AB1F52DB100010E067 /* RequestOrderModifyAddr.m in Sources */,
 				7660AB1B201704C60070A148 /* RequestUserProducts.m in Sources */,
 				766B24C32064AC5F001D3401 /* AUIAnimatableLabel.m in Sources */,
+				76419162207F3A95006385D5 /* MyOrderPageController.m in Sources */,
 				445A5F041F1B3E4000E5E5E6 /* CALayer+WebCache.m in Sources */,
 				3EF2AA9F1FFCD2FD00C4B26B /* JXBubbleView+File.m in Sources */,
 				445A5F051F1B3E4000E5E5E6 /* AKShareConfirm.m in Sources */,
@@ -8226,6 +8261,7 @@
 				768CD6932072550E00D70F9A /* VIPPurchaseController.m in Sources */,
 				3EF2AA891FFCD2FD00C4B26B /* JXLocalizeHelper.m in Sources */,
 				768CD8B92074B3FB00D70F9A /* ASaleCellLayout.m in Sources */,
+				7641915D207F38C7006385D5 /* DeliverLiveTableCell.m in Sources */,
 				445A5F171F1B3E4000E5E5E6 /* TextButton.m in Sources */,
 				445A5F191F1B3E4000E5E5E6 /* UIImage+ImageEffects.m in Sources */,
 				768CD7DB20725EA300D70F9A /* OrderLivesController.m in Sources */,
@@ -8679,6 +8715,7 @@
 				76CDACAF204001DA008CD198 /* RequestAftersaleDetail.m in Sources */,
 				76CDACB0204001DA008CD198 /* JXChatViewController+MessageSend.m in Sources */,
 				76CDACB1204001DA008CD198 /* UITouch+MemoryLeak.m in Sources */,
+				76419159207F3537006385D5 /* DeliverLivesController.m in Sources */,
 				76CDACB2204001DA008CD198 /* MLeaksMessenger.m in Sources */,
 				76AE00C2206417B400953696 /* BarcodeScanController.m in Sources */,
 				768CD76C20725BD900D70F9A /* ProductsViewController.m in Sources */,
@@ -8757,6 +8794,7 @@
 				766B24DC2065AEB9001D3401 /* RequestUnbindUser.m in Sources */,
 				76CDACFA204001DA008CD198 /* ResponseVIPPurchase.m in Sources */,
 				76CDACFB204001DA008CD198 /* JXMessage+Extends.m in Sources */,
+				76419168207F8660006385D5 /* DeliverDetailController.m in Sources */,
 				766DED7420609D9500F17E30 /* PopupLivesView.m in Sources */,
 				76CDACFC204001DA008CD198 /* JXMessageCell.m in Sources */,
 				76CDACFD204001DA008CD198 /* JXMovieWriter.m in Sources */,
@@ -8833,6 +8871,7 @@
 				76CDAD45204001DA008CD198 /* UIViewController+WXSTransitionProperty.m in Sources */,
 				766B24C42064AC5F001D3401 /* AUIAnimatableLabel.m in Sources */,
 				76CDAD46204001DA008CD198 /* LiveInfo.m in Sources */,
+				76419163207F3A95006385D5 /* MyOrderPageController.m in Sources */,
 				76CDAD47204001DA008CD198 /* RequestOrderModifyAddr.m in Sources */,
 				76CDAD48204001DA008CD198 /* RequestUserProducts.m in Sources */,
 				76CDAD4B204001DA008CD198 /* CALayer+WebCache.m in Sources */,
@@ -8889,6 +8928,7 @@
 				768CD6942072550E00D70F9A /* VIPPurchaseController.m in Sources */,
 				76CDAD78204001DA008CD198 /* SGQRCodeScanManager.m in Sources */,
 				76CDAD7B204001DA008CD198 /* RequestTrackSku.m in Sources */,
+				7641915E207F38C7006385D5 /* DeliverLiveTableCell.m in Sources */,
 				768CD8BA2074B3FB00D70F9A /* ASaleCellLayout.m in Sources */,
 				76CDAD7C204001DA008CD198 /* JXLocalizeHelper.m in Sources */,
 				76CDAD7D204001DA008CD198 /* TextButton.m in Sources */,

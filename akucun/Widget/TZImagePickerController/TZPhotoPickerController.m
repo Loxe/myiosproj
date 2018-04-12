@@ -22,18 +22,18 @@
 #import "YXVideoCaptureViewController.h"
 
 @interface TZPhotoPickerController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIAlertViewDelegate> {
-    NSMutableArray *_models;
     
     UIButton *_previewButton;
     UIButton *_doneButton;
     UIImageView *_numberImageView;
     UILabel *_numberLabel;
     UIButton *_originalPhotoButton;
-    UILabel *_originalPhotoLabel;
-    
-    BOOL _shouldScrollToBottom;
-    BOOL _showTakePhotoBtn;
 }
+@property (nonatomic, strong) NSMutableArray *models;
+@property (nonatomic, strong) UILabel *originalPhotoLabel;
+@property (nonatomic, assign) BOOL shouldScrollToBottom;
+@property (nonatomic, assign) BOOL showTakePhotoBtn;
+
 @property CGRect previousPreheatRect;
 @property (nonatomic, assign) BOOL isSelectOriginalPhoto;
 @property (nonatomic, strong) TZCollectionView *collectionView;
@@ -79,20 +79,23 @@ static CGSize AssetGridThumbnailSize;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamedFromMyBundle:@"navi_back.png"] style:UIBarButtonItemStylePlain target:self action:@selector(backBtnClick)];
     
     _showTakePhotoBtn = (([[TZImageManager manager] isCameraRollAlbum:_model.name]) && tzImagePickerVc.allowTakePicture);
+    @weakify(self)
     if (!tzImagePickerVc.sortAscendingByModificationDate && _isFirstAppear && iOS8Later) {
         [[TZImageManager manager] getCameraRollAlbum:tzImagePickerVc.allowPickingVideo allowPickingImage:tzImagePickerVc.allowPickingImage completion:^(TZAlbumModel *model) {
-            _model = model;
-            _models = [NSMutableArray arrayWithArray:_model.models];
+            @strongify(self)
+            self.model = model;
+            self.models = [NSMutableArray arrayWithArray:self.model.models];
             [self initSubviews];
         }];
     } else {
         if (_showTakePhotoBtn || !iOS8Later || _isFirstAppear) {
             [[TZImageManager manager] getAssetsFromFetchResult:_model.result allowPickingVideo:tzImagePickerVc.allowPickingVideo allowPickingImage:tzImagePickerVc.allowPickingImage completion:^(NSArray<TZAssetModel *> *models) {
-                _models = [NSMutableArray arrayWithArray:models];
+                @strongify(self)
+                self.models = [NSMutableArray arrayWithArray:models];
                 [self initSubviews];
             }];
         } else {
-            _models = [NSMutableArray arrayWithArray:_model.models];
+            self.models = [NSMutableArray arrayWithArray:self.model.models];
             [self initSubviews];
         }
     }
@@ -607,8 +610,10 @@ static CGSize AssetGridThumbnailSize;
 
 - (void)getSelectedPhotoBytes {
     TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
+    @weakify(self)
     [[TZImageManager manager] getPhotosBytesWithArray:imagePickerVc.selectedModels completion:^(NSString *totalBytes) {
-        _originalPhotoLabel.text = [NSString stringWithFormat:@"(%@)",totalBytes];
+        @strongify(self)
+        self.originalPhotoLabel.text = [NSString stringWithFormat:@"(%@)",totalBytes];
     }];
 }
 
@@ -693,25 +698,27 @@ static CGSize AssetGridThumbnailSize;
 
 - (void)reloadPhotoArray {
     TZImagePickerController *tzImagePickerVc = (TZImagePickerController *)self.navigationController;
+    @weakify(self)
     [[TZImageManager manager] getCameraRollAlbum:tzImagePickerVc.allowPickingVideo allowPickingImage:tzImagePickerVc.allowPickingImage completion:^(TZAlbumModel *model) {
-        _model = model;
+        @strongify(self)
+        self.model = model;
         [[TZImageManager manager] getAssetsFromFetchResult:_model.result allowPickingVideo:tzImagePickerVc.allowPickingVideo allowPickingImage:tzImagePickerVc.allowPickingImage completion:^(NSArray<TZAssetModel *> *models) {
             [tzImagePickerVc hideProgressHUD];
             
             TZAssetModel *assetModel;
             if (tzImagePickerVc.sortAscendingByModificationDate) {
                 assetModel = [models lastObject];
-                [_models addObject:assetModel];
+                [self.models addObject:assetModel];
             } else {
                 assetModel = [models firstObject];
-                [_models insertObject:assetModel atIndex:0];
+                [self.models insertObject:assetModel atIndex:0];
             }
             
             if (tzImagePickerVc.maxImagesCount <= 1) {
                 if (tzImagePickerVc.allowCrop) {
                     TZPhotoPreviewController *photoPreviewVc = [[TZPhotoPreviewController alloc] init];
-                    photoPreviewVc.currentIndex = _models.count - 1;
-                    photoPreviewVc.models = _models;
+                    photoPreviewVc.currentIndex = self.models.count - 1;
+                    photoPreviewVc.models = self.models;
                     [self pushPhotoPrevireViewController:photoPreviewVc];
                 } else {
                     [tzImagePickerVc.selectedModels addObject:assetModel];
@@ -727,7 +734,7 @@ static CGSize AssetGridThumbnailSize;
             }
             [_collectionView reloadData];
             
-            _shouldScrollToBottom = YES;
+            self.shouldScrollToBottom = YES;
             [self scrollCollectionViewToBottom];
         }];
     }];

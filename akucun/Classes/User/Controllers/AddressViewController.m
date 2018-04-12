@@ -82,7 +82,7 @@
         // 异步 读取省份城市信息
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"city" ofType:@"json"];
         NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];
-        _citysData = [data objectFromJSONData];
+        self.citysData = [data objectFromJSONData];
     });
     
     //

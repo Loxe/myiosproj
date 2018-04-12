@@ -244,12 +244,14 @@
     [button clearBadge];
 }
 
-+ (instancetype)pageMenuWithFrame:(CGRect)frame trackerStyle:(SPPageMenuTrackerStyle)trackerStyle {
++ (instancetype)pageMenuWithFrame:(CGRect)frame trackerStyle:(SPPageMenuTrackerStyle)trackerStyle
+{
     SPPageMenu *pageMenu = [[SPPageMenu alloc] initWithFrame:frame trackerStyle:trackerStyle];
     return pageMenu;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame trackerStyle:(SPPageMenuTrackerStyle)trackerStyle {
+- (instancetype)initWithFrame:(CGRect)frame trackerStyle:(SPPageMenuTrackerStyle)trackerStyle
+{
     if (self = [super init]) {
         self.frame = frame;
         self.backgroundColor = [UIColor whiteColor];
@@ -260,7 +262,8 @@
     return self;
 }
 
-- (void)setItems:(NSArray *)items selectedItemIndex:(NSUInteger)selectedItemIndex {
+- (void)setItems:(NSArray *)items selectedItemIndex:(NSUInteger)selectedItemIndex
+{
     _items = items.copy;
     _selectedItemIndex = selectedItemIndex;
     
@@ -920,13 +923,13 @@
     [self moveItemScrollViewWithSelectedButton:self.selectedButton];
 }
 
-- (void)setItemPadding:(CGFloat)itemPadding {
-    _itemPadding = itemPadding;
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
-    // 修正scrollView偏移
-    [self moveItemScrollViewWithSelectedButton:self.selectedButton];
-}
+//- (void)setItemPadding:(CGFloat)itemPadding {
+//    _itemPadding = itemPadding;
+//    [self setNeedsLayout];
+//    [self layoutIfNeeded];
+//    // 修正scrollView偏移
+//    [self moveItemScrollViewWithSelectedButton:self.selectedButton];
+//}
 
 - (void)setItemTitleFont:(UIFont *)itemTitleFont {
     _itemTitleFont = itemTitleFont;
@@ -1068,7 +1071,7 @@
     for (int i= 0 ; i < self.buttons.count; i++) {
         SPItem *button = self.buttons[i];
 
-        CGFloat setupButtonW = [[self.setupWidths objectForKey:[NSString stringWithFormat:@"%zd",i]] floatValue];
+        CGFloat setupButtonW = [[self.setupWidths objectForKey:[NSString stringWithFormat:@"%d",i]] floatValue];
         CGFloat textW = [button.titleLabel.text boundingRectWithSize:CGSizeMake(MAXFLOAT, itemScrollViewH) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:_itemTitleFont} context:nil].size.width;
         CGFloat imageW = button.currentImage.size.width;
         if (button.currentTitle && !button.currentImage) {
@@ -1089,38 +1092,39 @@
         }
     }
     CGFloat diff = itemScrollViewW - contentW_sum;
-    
+    @weakify(self)
     [self.buttons enumerateObjectsUsingBlock:^(SPItem *button, NSUInteger idx, BOOL * _Nonnull stop) {
+        @strongify(self)
         CGFloat setupButtonW = [[self.setupWidths objectForKey:[NSString stringWithFormat:@"%zd",idx]] floatValue];
         if (self.permutationWay == SPPageMenuPermutationWayScrollAdaptContent) {
             buttonW = [buttonWidths[idx] floatValue];
             if (idx == 0) {
-                button.frame = CGRectMake(_itemPadding*0.5+lastButtonMaxX, 0, buttonW, itemScrollViewH);
+                button.frame = CGRectMake(self.itemPadding*0.5+lastButtonMaxX, 0, buttonW, itemScrollViewH);
             } else {
-                button.frame = CGRectMake(_itemPadding+lastButtonMaxX, 0, buttonW, itemScrollViewH);
+                button.frame = CGRectMake(self.itemPadding+lastButtonMaxX, 0, buttonW, itemScrollViewH);
 
             }
         } else if (self.permutationWay == SPPageMenuPermutationWayNotScrollEqualWidths) {
             // 求出外界设置的按钮宽度之和
             CGFloat totalSetupButtonW = [[self.setupWidths.allValues valueForKeyPath:@"@sum.floatValue"] floatValue];
             // 如果该按钮外界设置了宽，则取外界设置的，如果外界没设置，则其余按钮等宽
-            buttonW = setupButtonW ? setupButtonW : (itemScrollViewW-_itemPadding*(self.buttons.count)-totalSetupButtonW)/(self.buttons.count-self.setupWidths.count);
+            buttonW = setupButtonW ? setupButtonW : (itemScrollViewW-self.itemPadding*(self.buttons.count)-totalSetupButtonW)/(self.buttons.count-self.setupWidths.count);
             if (buttonW < 0) { // 按钮过多时,有可能会为负数
                 buttonW = 0;
             }
             if (idx == 0) {
-                button.frame = CGRectMake(_itemPadding*0.5+lastButtonMaxX, 0, buttonW, itemScrollViewH);
+                button.frame = CGRectMake(self.itemPadding*0.5+lastButtonMaxX, 0, buttonW, itemScrollViewH);
             } else {
-                button.frame = CGRectMake(_itemPadding+lastButtonMaxX, 0, buttonW, itemScrollViewH);
+                button.frame = CGRectMake(self.itemPadding+lastButtonMaxX, 0, buttonW, itemScrollViewH);
             }
             
         } else {
-            _itemPadding = diff/self.buttons.count;
+            self.itemPadding = diff/self.buttons.count;
             buttonW = [buttonWidths[idx] floatValue];
             if (idx == 0) {
-                button.frame = CGRectMake(_itemPadding*0.5+lastButtonMaxX, 0, buttonW, itemScrollViewH);
+                button.frame = CGRectMake(self.itemPadding*0.5+lastButtonMaxX, 0, buttonW, itemScrollViewH);
             } else {
-                button.frame = CGRectMake(_itemPadding+lastButtonMaxX, 0, buttonW, itemScrollViewH);
+                button.frame = CGRectMake(self.itemPadding+lastButtonMaxX, 0, buttonW, itemScrollViewH);
             }
         }
         lastButtonMaxX = CGRectGetMaxX(button.frame);

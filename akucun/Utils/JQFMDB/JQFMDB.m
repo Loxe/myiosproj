@@ -587,10 +587,10 @@ static JQFMDB *jqdb = nil;
                 CLS = parameters;
             }
             NSDictionary *modelDic = [self modelToDictionary:CLS excludePropertyName:nameArr];
-            NSArray *columnArr = [self getColumnArr:tableName db:_db];
+            NSArray *columnArr = [self getColumnArr:tableName db:self.db];
             for (NSString *key in modelDic) {
                 if (![columnArr containsObject:key] && ![nameArr containsObject:key]) {
-                    flag = [_db executeUpdate:[NSString stringWithFormat:@"ALTER TABLE %@ ADD COLUMN %@ %@", tableName, key, modelDic[key]]];
+                    flag = [self.db executeUpdate:[NSString stringWithFormat:@"ALTER TABLE %@ ADD COLUMN %@ %@", tableName, key, modelDic[key]]];
                     if (!flag) {
                         *rollback = YES;
                         return;

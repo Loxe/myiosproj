@@ -106,7 +106,7 @@
     else {
         [self.pageMenu clearBadgeAt:self.selectedIndex];
         DiscoverViewController *targetViewController = self.viewControllers[self.selectedIndex];
-        [targetViewController updateData:nil];
+        [targetViewController updateData];
     }
     
 //    NSInteger index = self.selectedIndex>=0 ? self.selectedIndex : 0;
@@ -150,7 +150,7 @@
     }
     
     DiscoverViewController *targetViewController = self.viewControllers[toIndex];
-    [targetViewController updateData:nil];
+    [targetViewController updateData];
 
     self.selectedIndex = toIndex;
 }

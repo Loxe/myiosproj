@@ -18,4 +18,6 @@
 
 @property (nonatomic, strong) UIView *seperatorLine;
 
+- (void) setupContent;
+
 @end

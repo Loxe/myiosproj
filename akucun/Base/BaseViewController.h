@@ -34,6 +34,8 @@
 
 - (void) initViewData;
 
+- (void) updateData;
+
 - (IBAction) leftButtonAction:(id)sender;
 
 - (IBAction) rightButtonAction:(id)sender;

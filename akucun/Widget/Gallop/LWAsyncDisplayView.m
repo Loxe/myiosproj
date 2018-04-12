@@ -162,7 +162,7 @@
     int32_t value = displayFlag.value;
     
     LWAsyncDisplayIsCanclledBlock isCancelledBlock = ^ BOOL() {
-        return value != _displayFlag.value;
+        return value != self.displayFlag.value;
     };
     
     for (NSInteger i = 0; i < self.layout.imageStorages.count; i ++) {
@@ -389,7 +389,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW,
                                  (int64_t)(0.15f * NSEC_PER_SEC)),
                    dispatch_get_main_queue(), ^{
-                       _highlight = nil;
+                       self.highlight = nil;
                        [self _hideHighlight];
                    });
     

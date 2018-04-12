@@ -507,7 +507,7 @@
     [SCHttpServiceFace serviceWithPostRequest:request onSuccess:^(id content) {
 //        POPUPINFO(@"修改成功");
         [SVProgressHUD showSuccessWithStatus:@"修改成功"];
-        [_tableView reloadData];
+        [self.tableView reloadData];
     } onFailed:^(id content) {
         return;
     }];
