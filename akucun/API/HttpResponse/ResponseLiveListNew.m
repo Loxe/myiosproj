@@ -68,6 +68,7 @@
             [liveIds appendString:liveId1];
             [liveIds appendString:@","];
         }
+        // 记录最新直播活动时间
         [[UserManager instance] updateLiveTime:time with:0];
     }
     else {
@@ -111,6 +112,7 @@
             [liveIds appendString:liveId2];
             [liveIds appendString:@","];
         }
+        // 记录最新专场活动时间
         [[UserManager instance] updateLiveTime:time with:1];
     }
     else {
@@ -153,6 +155,7 @@
         if (liveId3.length > 0) {
             [liveIds appendString:liveId3];
         }
+        // 记录最新爆款活动时间
         [[UserManager instance] updateLiveTime:time with:2];
     }
     else {

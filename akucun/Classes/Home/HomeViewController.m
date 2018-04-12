@@ -49,14 +49,14 @@
     liveController.liveType = 0;
     [self.controllers addObject:liveController];
     
+    LiveListViewController *pkgController = [LiveListViewController new];
+    pkgController.liveType = 1;
+    [self.controllers addObject:pkgController];
+    
     //
     LiveListViewController *dxListController = [LiveListViewController new];
     dxListController.liveType = 3;
     [self.controllers addObject:dxListController];
-    
-    LiveListViewController *pkgController = [LiveListViewController new];
-    pkgController.liveType = 1;
-    [self.controllers addObject:pkgController];
     
     TrailerViewController *trailerController = [TrailerViewController new];
     [self.controllers addObject:trailerController];
@@ -70,11 +70,20 @@
 
 - (void) updateNewFlag:(NSDictionary *)flagDic
 {
+    NSInteger index = 0;
     for (NSInteger i = 0; i < 4; i++) {
         NSString *key = kIntergerToString(i);
         BOOL flag = [flagDic getBoolValueForKey:key];
-        if (flag && self.currentIndex != i) {
-            [self.topBarView showBadgeAt:i];
+        index = i;
+        // 专场和爆款活动 顺序调整
+        if (i == 1) {
+            index = 2;
+        }
+        else if (i == 2) {
+            index = 1;
+        }
+        if (flag && self.currentIndex != index) {
+            [self.topBarView showBadgeAt:index];
         }
     }
 }
@@ -198,7 +207,7 @@
     if (!_topBarView) {
         CGFloat titleBarHeight = kHomeTopbarHeight;
         _topBarView = [[HomeTopbarView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, titleBarHeight)];
-        [_topBarView initTitles:@[@"直 播", @"DX利丰", @"爆 款", @"预 告"]];
+        [_topBarView initTitles:@[@"直 播", @"爆 款", @"DX利丰", @"预 告"]];
     }
     return _topBarView;
 }

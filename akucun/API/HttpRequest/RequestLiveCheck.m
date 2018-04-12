@@ -35,10 +35,10 @@
     double type1 = [[UserManager instance] liveTimeWith:1];
     double type2 = [[UserManager instance] liveTimeWith:2];
     double type3 = [[UserManager instance] liveTimeWith:3];
-    [self.dataParams setParamDoubleValue:type0 forKey:@"directseeding"];
-    [self.dataParams setParamDoubleValue:type1 forKey:@"performance"];
-    [self.dataParams setParamDoubleValue:type2 forKey:@"explosion"];
-    [self.dataParams setParamDoubleValue:type3 forKey:@"herald"];
+    [self.dataParams setParamDoubleValue:type0 forKey:@"directseeding"]; // 直播
+    [self.dataParams setParamDoubleValue:type1 forKey:@"performance"];  // 专场
+    [self.dataParams setParamDoubleValue:type2 forKey:@"explosion"];    // 爆款
+    [self.dataParams setParamDoubleValue:type3 forKey:@"herald"];       // 预告
 }
 
 @end

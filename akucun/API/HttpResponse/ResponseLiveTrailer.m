@@ -31,6 +31,7 @@
         }
         [listData addObject:item];
     }
+    // 记录最新预告活动时间
     [[UserManager instance] updateLiveTime:time with:3];
 
     //
